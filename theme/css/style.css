@@ -1,0 +1,1044 @@
+/* Basic Reset & Body Styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; /* Default font */
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Headings font */
+    margin-top: 0;
+    margin-bottom: 0.75em;
+    font-weight: 700; /* Bold headings */
+    color: #2c3e50; /* Dark blue-grey for headings */
+}
+
+h1 { font-size: 2.5em; line-height: 1.2; }
+h2 { font-size: 2em; margin-bottom: 1em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1em; }
+
+a {
+    color: #3498db; /* Primary blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9; /* Darker blue on hover */
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below images */
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px; /* Standard max width */
+    margin: 0 auto; /* Center container */
+    padding: 0 15px; /* Add horizontal padding */
+}
+
+section {
+    padding: 60px 0; /* Standard vertical padding for sections */
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    border: 2px solid transparent;
+}
+
+.button-primary {
+    background-color: #3498db; /* Primary blue */
+    color: #fff;
+    border-color: #3498db;
+}
+
+.button-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    color: #fff;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: #3498db;
+    border-color: #3498db;
+}
+
+.button-secondary:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    position: sticky; /* Make header sticky */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; /* Reset padding for header container */
+}
+
+.site-header .logo a {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.site-header .main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.site-header .main-navigation li {
+    margin-left: 25px;
+}
+
+.site-header .main-navigation a {
+    color: #555;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.site-header .main-navigation a:hover, 
+.site-header .main-navigation .current-menu-item a /* Add class for current page */ {
+    color: #3498db;
+    border-bottom-color: #3498db;
+}
+
+.site-header .header-contact {
+    display: flex;
+    align-items: center;
+}
+
+.site-header .phone {
+    margin-right: 20px;
+    font-weight: 600;
+    color: #555;
+    /* Add phone icon later */
+}
+
+/* Hero Section Styles */
+.hero {
+    background: #eaf2f8 url('images/placeholder-hero-bg.jpg') no-repeat center center/cover; /* Placeholder BG */
+    color: #fff; /* Default to white text, adjust if BG is light */
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before { /* Optional overlay for text readability */
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(44, 62, 80, 0.6); /* Dark blue-grey overlay */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero .badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero .subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f0f0f0;
+}
+
+.hero .hero-buttons .button {
+    margin: 0 10px;
+}
+
+.hero .button-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+.hero .button-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.hero .button-secondary {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.hero .button-secondary:hover {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+/* Services Section Styles */
+.services {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 50px;
+}
+
+.services .service-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Space between columns */
+}
+
+.services .service-column {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    flex: 1; /* Equal width columns */
+    text-align: left;
+}
+
+.services .service-column h3 {
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.services .service-column p {
+    margin-bottom: 20px;
+}
+
+.services .learn-more {
+    font-weight: 600;
+    color: #3498db;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #fff;
+}
+
+.about .about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about .about-image {
+    flex-basis: 45%; /* Adjust width as needed */
+}
+
+.about .about-image img {
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about .about-text {
+    flex-basis: 55%;
+}
+
+.about .about-text h3 {
+    margin-bottom: 20px;
+}
+
+.about .badges {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* Style individual badges later */
+}
+
+.about .badges span {
+    display: inline-block;
+    margin-right: 15px;
+    /* Placeholder styling */
+    padding: 8px 12px;
+    background: #eee;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Process Section Styles */
+.process {
+    background-color: #eaf2f8; /* Light blue background */
+    text-align: center;
+}
+
+.process h2 {
+    margin-bottom: 50px;
+}
+
+.process .process-steps-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.process .process-step {
+    flex: 1;
+    /* Add icon styling later */
+}
+
+.process .process-step h4 {
+    margin-bottom: 10px;
+}
+
+/* Portfolio Preview Styles */
+.portfolio-preview {
+    background-color: #fff;
+    text-align: center;
+}
+
+.portfolio-preview h2 {
+    margin-bottom: 50px;
+}
+
+.portfolio-preview .portfolio-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.portfolio-preview .portfolio-item {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.portfolio-preview .portfolio-item img {
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.portfolio-preview .portfolio-item h5 {
+    padding: 15px;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 50px;
+}
+
+.testimonials .testimonial-slider {
+    /* Basic slider placeholder */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonials .testimonial {
+    margin-bottom: 20px; /* Adjust when using a real slider */
+    font-style: italic;
+    color: #555;
+}
+
+.testimonials .testimonial p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.testimonials .testimonial cite {
+    font-style: normal;
+    font-weight: 600;
+    color: #333;
+}
+
+/* CTA Section Styles */
+.cta {
+    background-color: #3498db; /* Primary blue background */
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.cta h2 {
+    color: #fff;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta .button-primary {
+    background-color: #fff;
+    color: #3498db;
+    border-color: #fff;
+    font-size: 1.1em;
+    padding: 15px 30px;
+}
+
+.cta .button-primary:hover {
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    color: #2980b9;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #2c3e50; /* Darker footer background */
+    color: #bdc3c7; /* Lighter text color */
+    padding: 50px 0 20px;
+    font-size: 0.95em;
+}
+
+.site-footer .footer-widgets {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.site-footer .footer-widget {
+    flex: 1;
+    min-width: 200px; /* Ensure widgets don't get too narrow */
+    margin-bottom: 20px;
+}
+
+.site-footer .footer-widget .logo a {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.site-footer h4 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer li {
+    margin-bottom: 10px;
+}
+
+.site-footer a {
+    color: #bdc3c7;
+}
+
+.site-footer a:hover {
+    color: #fff;
+}
+
+.site-footer .footer-widget .button {
+    margin-top: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+}
+
+.site-footer .footer-widget .button:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.site-footer .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #34495e; /* Slightly lighter border */
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #95a5a6; /* Even lighter color for copyright */
+}
+
+/* Responsive Styles (Basic Example) */
+@media (max-width: 992px) {
+    .site-header .main-navigation {
+        /* Hide for mobile, implement toggle later */
+        display: none; 
+    }
+    .site-header .header-contact .phone {
+        display: none; /* Hide phone in header on smaller screens */
+    }
+    .about .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .about-image {
+        margin-bottom: 30px;
+    }
+    .services .service-columns {
+        flex-direction: column;
+    }
+    .process .process-steps-container {
+        flex-direction: column;
+    }
+    .portfolio-preview .portfolio-items {
+        flex-direction: column;
+    }
+    .site-footer .footer-widgets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .site-footer .footer-widget {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.75em; }
+    h3 { font-size: 1.3em; }
+
+    .hero h1 { font-size: 2.5em; }
+    .hero .subtitle { font-size: 1.1em; }
+
+    .site-header .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .site-header .logo {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .site-header .header-contact {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* Add more specific styles for sections, responsiveness etc. */
+
+
+/* ... Previous CSS ... */
+
+/* Page Header Styles */
+.page-header {
+    background-color: #2c3e50; /* Dark blue-grey background */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.page-header .subtitle {
+    font-size: 1.1em;
+    color: #bdc3c7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Service Categories Section Styles (services.html) */
+.service-categories {
+    padding: 80px 0;
+}
+
+.service-categories .service-category {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 60px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+}
+
+/* Alternate layout for visual interest */
+.service-categories .service-category:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.service-categories .service-content {
+    flex: 1;
+}
+
+.service-categories .service-image {
+    flex-basis: 40%;
+    max-width: 450px; /* Limit image size */
+}
+
+.service-categories .service-image img {
+    border-radius: 8px;
+}
+
+.service-categories h2 {
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.service-categories ul {
+    list-style: disc; /* Use standard bullets */
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.service-categories li {
+    margin-bottom: 8px;
+}
+
+/* About Content Section Styles (about.html) */
+.about-content-section {
+     padding: 80px 0;
+}
+
+.about-content-section .about-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start; /* Align items to top */
+}
+
+.about-content-section .about-image {
+    flex-basis: 40%;
+}
+
+.about-content-section .about-image img {
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-content-section .about-text {
+    flex-basis: 60%;
+}
+
+.about-content-section .about-text h2 {
+    margin-bottom: 15px;
+}
+
+.about-content-section .about-text h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.about-content-section .about-text ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-content-section .about-text li {
+    margin-bottom: 8px;
+}
+
+.about-content-section .credentials {
+    margin-top: 30px;
+    /* Style badges later */
+}
+
+.about-content-section .credentials span {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 8px 12px;
+    background: #eee;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* ... More CSS for other pages and responsiveness ... */
+
+/* Responsive adjustments for service categories */
+@media (max-width: 992px) {
+    .service-categories .service-category,
+    .service-categories .service-category:nth-child(even) {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-categories .service-image {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .service-categories .service-category:nth-child(even) .service-image {
+        order: -1; /* Move image to top on even items */
+    }
+    .service-categories ul {
+        text-align: left; /* Keep list items left-aligned */
+        display: inline-block;
+    }
+
+    .about-content-section .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-content-section .about-image {
+        margin-bottom: 30px;
+    }
+     .about-content-section .about-text ul {
+        text-align: left;
+        display: inline-block;
+    }
+}
+
+/* ... Rest of CSS ... */
+
+
+/* ... Previous CSS ... */
+
+/* Portfolio Page Styles */
+.portfolio-grid-section {
+    padding: 80px 0;
+}
+
+.portfolio-filters {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-filters .filter-button {
+    background: none;
+    border: 1px solid #ccc;
+    color: #555;
+    padding: 8px 18px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.portfolio-filters .filter-button.active,
+.portfolio-filters .filter-button:hover {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 280px; /* Consistent height */
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-item .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(44, 62, 80, 0.85); /* Dark overlay */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.portfolio-overlay h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.portfolio-overlay p {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+.portfolio-overlay .view-project {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-overlay .view-project:hover {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+/* Process Page Styles */
+.process-steps-section {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Light background */
+}
+
+.process-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.process-step-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.process-step-item .step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3498db;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.process-step-item .step-icon {
+    font-size: 2.5em; /* Adjust icon size */
+    color: #3498db;
+    margin-bottom: 20px;
+    margin-top: 30px; /* Space below number */
+}
+
+.process-step-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+/* Contact Page Styles */
+.contact-details-section {
+    padding: 80px 0;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-info {
+    flex-basis: 40%;
+}
+
+.contact-form-container {
+    flex-basis: 60%;
+}
+
+.contact-info h2,
+.contact-form-container h2 {
+    margin-bottom: 25px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list li i {
+    color: #3498db;
+    margin-right: 12px;
+    width: 20px; /* Align icons */
+    text-align: center;
+}
+
+.contact-list li a {
+    color: #333;
+}
+.contact-list li a:hover {
+    color: #3498db;
+}
+
+.map-placeholder {
+    height: 250px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Basic Form Styling */
+.form-placeholder form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group select {
+    appearance: none; /* Custom select arrow needed */
+    background-color: #fff;
+}
+
+.form-placeholder .button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+/* Booking Section Styles */
+.booking-section {
+    padding: 80px 0;
+    background-color: #eaf2f8; /* Light blue background */
+    text-align: center;
+}
+
+.booking-section h2 {
+    margin-bottom: 15px;
+}
+
+.booking-section p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1em;
+}
+
+.amelia-booking-placeholder {
+    min-height: 300px; /* Placeholder height */
+    background-color: #fff;
+    border: 1px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments for contact page */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-info,
+    .contact-form-container {
+        flex-basis: 100%;
+    }
+    .contact-info {
+        margin-bottom: 40px;
+    }
+}
+
+/* ... Rest of CSS ... */
+

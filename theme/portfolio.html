@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - Top Notch Renovations & Home Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add links to Google Fonts: Montserrat & Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section (from partials/header.html) -->
+    <!--#include virtual="templates/partials/header.html" -->
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header portfolio-header">
+             <div class="container">
+                <h1>Our Portfolio</h1>
+                <p class="subtitle">Showcasing our commitment to quality craftsmanship and client satisfaction.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid Section -->
+        <section class="portfolio-grid-section" id="portfolio-items">
+            <div class="container">
+                <!-- Filter Controls -->
+                <div class="portfolio-filters">
+                    <button class="filter-button active" data-filter="all">All Projects</button>
+                    <button class="filter-button" data-filter="renovations">Renovations</button>
+                    <button class="filter-button" data-filter="electrical">Electrical</button>
+                    <button class="filter-button" data-filter="improvements">Improvements</button>
+                </div>
+
+                <!-- Portfolio Items Grid -->
+                <div class="portfolio-grid">
+                    <!-- Project Item 1 (Example - Renovation) -->
+                    <div class="portfolio-item" data-category="renovations">
+                        <a href="#" class="portfolio-link"> <!-- Link to case study page or modal -->
+                            <img src="images/portfolio/bathroom-modern-1.jpg" alt="Modern Bathroom Transformation">
+                            <div class="portfolio-overlay">
+                                <h3>Traditional to Modern: Bathroom Transformation</h3>
+                                <p>Complete overhaul featuring new fixtures, tilework, and lighting.</p>
+                                <span class="view-project">View Project</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Project Item 2 (Example - Aging-in-Place) -->
+                    <div class="portfolio-item" data-category="renovations improvements">
+                         <a href="#" class="portfolio-link">
+                            <img src="images/portfolio/bathroom-aging-1.jpg" alt="Aging-in-Place Bathroom">
+                            <div class="portfolio-overlay">
+                                <h3>Aging-in-Place Bathroom Renovation</h3>
+                                <p>Accessible design with grab bars, walk-in shower, and smart features.</p>
+                                <span class="view-project">View Project</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Project Item 3 (Example - Kitchen) -->
+                    <div class="portfolio-item" data-category="renovations electrical">
+                         <a href="#" class="portfolio-link">
+                            <img src="images/portfolio/kitchen-lighting-1.jpg" alt="Kitchen Remodel with Custom Lighting">
+                            <div class="portfolio-overlay">
+                                <h3>Kitchen Remodel with Custom Lighting</h3>
+                                <p>Updated kitchen featuring new cabinets, countertops, and integrated lighting design.</p>
+                                <span class="view-project">View Project</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Project Item 4 (Example - Electrical) -->
+                    <div class="portfolio-item" data-category="electrical renovations">
+                         <a href="#" class="portfolio-link">
+                            <img src="images/portfolio/electrical-bathroom-1.jpg" alt="Electrical Upgrade & Bathroom Combo">
+                            <div class="portfolio-overlay">
+                                <h3>Electrical Upgrade & Bathroom Combo</h3>
+                                <p>Combined project involving panel upgrade, new wiring, and bathroom fixtures.</p>
+                                <span class="view-project">View Project</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Project Item 5 (Example - Small Bathroom) -->
+                    <div class="portfolio-item" data-category="renovations">
+                         <a href="#" class="portfolio-link">
+                            <img src="images/portfolio/bathroom-small-1.jpg" alt="Compact Bathroom Redesign">
+                            <div class="portfolio-overlay">
+                                <h3>Small Space, Big Impact: Compact Bathroom</h3>
+                                <p>Clever design solutions to maximize functionality in a small bathroom.</p>
+                                <span class="view-project">View Project</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Project Item 6 (Example - Improvement) -->
+                    <div class="portfolio-item" data-category="improvements">
+                         <a href="#" class="portfolio-link">
+                            <img src="images/portfolio/tile-backsplash-1.jpg" alt="Kitchen Tile Backsplash">
+                            <div class="portfolio-overlay">
+                                <h3>Kitchen Tile Backsplash Installation</h3>
+                                <p>Adding style and function with a new tile backsplash.</p>
+                                <span class="view-project">View Project</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Add more project items as needed -->
+
+                </div> <!-- /.portfolio-grid -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section class="cta" id="cta-portfolio">
+             <div class="container">
+                <h2>Inspired by Our Work?</h2>
+                <p>Let us bring the same level of quality and dedication to your home project. Contact us today!</p>
+                <a href="contact.html#consultation" class="button button-primary">Get Your Free Consultation</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section (from partials/footer.html) -->
+    <!--#include virtual="templates/partials/footer.html" -->
+
+    <script src="js/script.js"></script>
+    <!-- Add JS for filtering if needed -->
+</body>
+</html>
+

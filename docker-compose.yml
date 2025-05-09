@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:5.7 # Using MySQL 5.7 for broader compatibility
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: dev_root_password # Use secure passwords in real projects
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: dev_wordpress_password # Use secure passwords in real projects
+    networks:
+      - wordpress_network
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    volumes:
+      - /home/ubuntu/top_notch_renovations:/var/www/html # Map local project dir
+      # Map placeholder theme/plugins into the container
+      - /home/ubuntu/top_notch_renovations/wp-content/themes/nexter-pro:/var/www/html/wp-content/themes/nexter-pro
+      - /home/ubuntu/top_notch_renovations/wp-content/plugins/elementor-pro:/var/www/html/wp-content/plugins/elementor-pro
+      - /home/ubuntu/top_notch_renovations/wp-content/plugins/ameliabooking:/var/www/html/wp-content/plugins/ameliabooking
+      - /home/ubuntu/top_notch_renovations/wp-content/plugins/wp-rocket:/var/www/html/wp-content/plugins/wp-rocket
+      - /home/ubuntu/top_notch_renovations/wp-content/plugins/testimonials-pro:/var/www/html/wp-content/plugins/testimonials-pro
+      - /home/ubuntu/top_notch_renovations/wp-content/plugins/wpdatatables:/var/www/html/wp-content/plugins/wpdatatables
+      - /home/ubuntu/top_notch_renovations/wp-content/plugins/revslider:/var/www/html/wp-content/plugins/revslider
+      - /home/ubuntu/top_notch_renovations/wp-content/plugins/the-plus-addons-for-elementor-page-builder:/var/www/html/wp-content/plugins/the-plus-addons-for-elementor-page-builder
+      - /home/ubuntu/top_notch_renovations/wp-content/plugins/unlimited-elements-for-elementor:/var/www/html/wp-content/plugins/unlimited-elements-for-elementor
+      - /home/ubuntu/top_notch_renovations/wp-content/plugins/wpdesignkit:/var/www/html/wp-content/plugins/wpdesignkit
+    ports:
+      - "8080:80" # Expose WordPress on port 8080 locally
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: dev_wordpress_password # Use secure passwords in real projects
+      WORDPRESS_DB_NAME: wordpress
+    networks:
+      - wordpress_network
+
+volumes:
+  db_data:
+
+networks:
+  wordpress_network:
+    driver: bridge
+

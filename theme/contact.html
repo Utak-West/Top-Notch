@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Top Notch Renovations & Home Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add links to Google Fonts: Montserrat & Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section (from partials/header.html) -->
+    <!--#include virtual="templates/partials/header.html" -->
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header contact-header">
+             <div class="container">
+                <h1>Contact Us</h1>
+                <p class="subtitle">Get in touch for a free consultation or any inquiries about your home project.</p>
+            </div>
+        </section>
+
+        <!-- Contact Info & Form Section -->
+        <section class="contact-details-section" id="contact-info">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>We look forward to hearing from you! Reach out via phone, email, or the form below. We proudly serve Linden, NJ and surrounding areas.</p>
+                    <ul class="contact-list">
+                        <li><strong><i class="fas fa-phone"></i> Phone:</strong> <a href="tel:+1[YourPhoneNumber]">[Your Phone Number Placeholder]</a></li>
+                        <li><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:[YourEmail]">[Your Email Address Placeholder]</a></li>
+                        <li><strong><i class="fas fa-map-marker-alt"></i> Address:</strong> [Your Address Placeholder, Linden, NJ - if applicable]</li>
+                        <li><strong><i class="fas fa-clock"></i> Business Hours:</strong> [Your Business Hours, e.g., Mon-Fri: 8am - 5pm]</li>
+                        <li><strong><i class="fas fa-map"></i> Service Area:</strong> Linden, Rahway, Roselle, Elizabeth, Clark, Cranford & surrounding areas.</li>
+                    </ul>
+                    <!-- Optional: Map Placeholder -->
+                    <!-- <div class="map-placeholder">[Google Map Embed Placeholder]</div> -->
+                </div>
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <!-- Placeholder for Contact Form (TypeForm embed recommended based on user preferences) -->
+                    <div class="form-placeholder" id="contact-form">
+                        <p>[Contact Form Placeholder - This area will contain the embedded TypeForm or a standard HTML form.]</p>
+                        <form action="#" method="post"> <!-- Basic HTML form structure if TypeForm isn't used immediately -->
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone:</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service of Interest:</label>
+                                <select id="service" name="service">
+                                    <option value="">-- Select Service --</option>
+                                    <option value="renovation">Complete Renovation</option>
+                                    <option value="electrical">Electrical Service</option>
+                                    <option value="improvement">Home Improvement</option>
+                                    <option value="consultation">General Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="button button-primary">Send Message</button> 
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Consultation Booking Section -->
+        <section class="booking-section" id="consultation">
+            <div class="container">
+                <h2>Ready for a Detailed Consultation?</h2>
+                <p>Book your free, no-obligation consultation easily using our online scheduler. Select a time that works best for you.</p>
+                <!-- Placeholder for Amelia Booking embed -->
+                <div class="amelia-booking-placeholder">
+                    <p>[Amelia Booking Embed Placeholder - This area will contain the Amelia shortcode/embed.]</p>
+                    <!-- Example Button if embed isn't direct -->
+                    <a href="#" class="button button-primary">Book Consultation Now</a> 
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section (from partials/footer.html) -->
+    <!--#include virtual="templates/partials/footer.html" -->
+
+    <script src="js/script.js"></script>
+    <!-- Add Font Awesome if using icons -->
+    <!-- <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script> -->
+</body>
+</html>
+

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - Top Notch Renovations & Home Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add links to Google Fonts: Montserrat & Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Top Notch Renovations Logo">Top Notch Renovations</a>
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="process.html">Our Process</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <span class="phone"><i class="fas fa-phone"></i> (908) 555-7890</span>
+                <a href="contact.html" class="button">Get a Free Quote</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p class="subtitle">Explore our completed renovation and electrical projects</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Portfolio Introduction -->
+        <section class="portfolio-intro">
+            <div class="container">
+                <p class="lead-text">Browse through our showcase of successful projects that highlight our expertise in home renovations and electrical services. Each project reflects our commitment to quality craftsmanship, attention to detail, and client satisfaction.</p>
+                
+                <!-- Portfolio Categories Navigation -->
+                <div class="portfolio-filter">
+                    <ul>
+                        <li><a href="#" class="active" data-filter="all">All Projects</a></li>
+                        <li><a href="#" data-filter="kitchen">Kitchens</a></li>
+                        <li><a href="#" data-filter="bathroom">Bathrooms</a></li>
+                        <li><a href="#" data-filter="electrical">Electrical</a></li>
+                        <li><a href="#" data-filter="other">Other Renovations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="portfolio-items">
+                    <!-- Kitchen Project 1 -->
+                    <div class="portfolio-item" data-category="kitchen">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio/kitchen-modern.jpg" alt="Modern Kitchen Renovation">
+                            <div class="overlay">
+                                <a href="#project1" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Modern Kitchen Renovation</h3>
+                            <p>Linden, NJ</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Bathroom Project 1 -->
+                    <div class="portfolio-item" data-category="bathroom">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio/bathroom-luxury.jpg" alt="Luxury Bathroom Transformation">
+                            <div class="overlay">
+                                <a href="#project2" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Luxury Bathroom Transformation</h3>
+                            <p>Cranford, NJ</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Electrical Project 1 -->
+                    <div class="portfolio-item" data-category="electrical">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio/electrical-panel.jpg" alt="Electrical Panel Upgrade">
+                            <div class="overlay">
+                                <a href="#project3" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Electrical Panel Upgrade</h3>
+                            <p>Rahway, NJ</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Kitchen Project 2 -->
+                    <div class="portfolio-item" data-category="kitchen">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio/kitchen-traditional.jpg" alt="Traditional Kitchen Remodel">
+                            <div class="overlay">
+                                <a href="#project4" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Traditional Kitchen Remodel</h3>
+                            <p>Westfield, NJ</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Bathroom Project 2 -->
+                    <div class="portfolio-item" data-category="bathroom">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio/bathroom-modern.jpg" alt="Modern Bathroom Design">
+                            <div class="overlay">
+                                <a href="#project5" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Modern Bathroom Design</h3>
+                            <p>Clark, NJ</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Electrical Project 2 -->
+                    <div class="portfolio-item" data-category="electrical">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio/smart-home.jpg" alt="Smart Home Integration">
+                            <div class="overlay">
+                                <a href="#project6" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Smart Home Integration</h3>
+                            <p>Union, NJ</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Other Renovation Project 1 -->
+                    <div class="portfolio-item" data-category="other">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio/basement-finish.jpg" alt="Basement Finishing">
+                            <div class="overlay">
+                                <a href="#project7" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Basement Finishing</h3>
+                            <p>Scotch Plains, NJ</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Other Renovation Project 2 -->
+                    <div class="portfolio-item" data-category="other">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio/living-room.jpg" alt="Living Room Transformation">
+                            <div class="overlay">
+                                <a href="#project8" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Living Room Transformation</h3>
+                            <p>Elizabeth, NJ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project Details (Hidden by default, shown when a project is clicked) -->
+        <section class="project-details" id="project1" style="display: none;">
+            <div class="container">
+                <div class="project-header">
+                    <h2>Modern Kitchen Renovation</h2>
+                    <span class="close-project"><i class="fas fa-times"></i></span>
+                </div>
+                
+                <div class="project-content">
+                    <div class="project-gallery">
+                        <div class="main-image">
+                            <img src="images/portfolio/kitchen-modern.jpg" alt="Modern Kitchen Renovation">
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="images/portfolio/kitchen-modern-2.jpg" alt="Modern Kitchen Close-up">
+                            <img src="images/portfolio/kitchen-modern-3.jpg" alt="Modern Kitchen Island">
+                            <img src="images/portfolio/kitchen-modern-4.jpg" alt="Modern Kitchen Cabinets">
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <h4>Location</h4>
+                                <p>Linden, NJ</p>
+                            </div>
+                            <div class="meta-item">
+                                <h4>Project Type</h4>
+                                <p>Kitchen Renovation</p>
+                            </div>
+                            <div class="meta-item">
+                                <h4>Duration</h4>
+                                <p>5 Weeks</p>
+                            </div>
+                        </div>
+                        
+                        <div class="project-text">
+                            <h3>Project Overview</h3>
+                            <p>This modern kitchen renovation transformed an outdated 1990s kitchen into a sleek, functional space for a family of four. The clients wanted an open concept design with improved flow, more storage, and updated appliances.</p>
+                            
+                            <h3>Scope of Work</h3>
+                            <ul>
+                                <li>Complete demolition of existing kitchen</li>
+                                <li>Removal of wall between kitchen and dining area</li>
+                                <li>New custom cabinetry with soft-close drawers</li>
+                                <li>Quartz countertops and marble backsplash</li>
+                                <li>New energy-efficient stainless steel appliances</li>
+                                <li>Center island with seating and storage</li>
+                                <li>Recessed, pendant, and under-cabinet lighting</li>
+                                <li>New hardwood flooring to match adjacent rooms</li>
+                                <li>Fresh paint throughout</li>
+                            </ul>
+                            
+                            <h3>Challenges & Solutions</h3>
+                            <p>During demolition, we discovered outdated electrical wiring that didn't meet current code requirements. Our integrated expertise allowed us to handle both the renovation and electrical work seamlessly, bringing everything up to code without delays or the need for a separate contractor.</p>
+                            
+                            <h3>Results</h3>
+                            <p>The finished kitchen provides a beautiful, functional space that meets all the family's needs while significantly increasing the home's value. The clients were thrilled with both the quality of work and how we managed to complete the project on time despite the unexpected electrical issues.</p>
+                            
+                            <div class="client-testimonial">
+                                <blockquote>"Pedro and his team transformed our outdated kitchen into a beautiful, functional space that has become the heart of our home. Their attention to detail and problem-solving abilities were impressive, especially when they discovered and fixed electrical issues we didn't even know existed."</blockquote>
+                                <cite>- The Johnson Family</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section class="cta" id="cta">
+            <div class="container">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Contact us today for a free consultation and quote. Let's bring your vision to life with quality craftsmanship and attention to detail.</p>
+                <a href="contact.html#consultation" class="button button-primary">Get Your Free Consultation</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <!-- Widget 1: Logo & Description -->
+                <div class="footer-widget">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo-white.png" alt="Top Notch Renovations Logo">Top Notch Renovations</a>
+                    </div>
+                    <p>Transforming homes with quality craftsmanship and integrated expertise in renovations and electrical services.</p>
+                    <p>Licensed, Bonded & Insured</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Widget 2: Quick Links -->
+                <div class="footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="process.html">Our Process</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Widget 3: Services -->
+                <div class="footer-widget">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html#renovations">Complete Renovations</a></li>
+                        <li><a href="services.html#electrical">Electrical Services</a></li>
+                        <li><a href="services.html#improvements">Home Improvements</a></li>
+                        <li><a href="services.html#kitchens">Kitchen Remodeling</a></li>
+                        <li><a href="services.html#bathrooms">Bathroom Remodeling</a></li>
+                        <li><a href="services.html#smart-home">Smart Home Integration</a></li>
+                    </ul>
+                </div>
+
+                <!-- Widget 4: Contact Info -->
+                <div class="footer-widget">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> (908) 555-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@topnotchrenovations.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Linden, NJ 07036</li>
+                        <li><i class="fas fa-globe"></i> Serving Union County and surrounding areas</li>
+                    </ul>
+                    <a href="contact.html" class="button">Get a Free Consultation</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Top Notch Renovations & Home Services. All Rights Reserved.</p>
+                <p class="designer-credit">Website by <a href="#">Utak West</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
