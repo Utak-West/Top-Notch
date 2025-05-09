@@ -3,42 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Notch Renovations & Home Services</title>
+    <title>Top Notch Renovations & Home Services | Linden, NJ</title>
+    <meta name="description" content="Expert home renovations, electrical services, and improvement solutions in Linden, NJ and surrounding areas. Licensed, bonded, and insured.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Enhancement CSS to handle missing images and improve responsiveness -->
+    <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/enhancements.css">
-    <!-- Add links to Google Fonts: Montserrat & Open Sans -->
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Top Notch Renovations Logo">Top Notch Renovations</a>
+                <a href="index.html">
+                    <object type="image/svg+xml" data="images/logo.svg" class="logo-svg" aria-label="Top Notch Renovations Logo">Top Notch Renovations</object>
+                </a>
             </div>
             <nav class="main-navigation">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="current-menu-item"><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="process.html">Our Process</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-contact">
-                <span class="phone"><i class="fas fa-phone"></i> (908) 555-7890</span>
+                <a href="tel:+19085525208" class="phone icon-inline"><i class="fas fa-phone"></i> (908) 494-5208</a>
                 <a href="contact.html" class="button">Get a Free Quote</a>
             </div>
-            <button class="mobile-menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+                <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
@@ -47,10 +52,11 @@
         <!-- Hero Section -->
         <section class="hero" id="hero">
             <div class="container">
-                <span class="badge">Licensed, Bonded & Insured</span>
-                <h1>Expert Home Renovations & Electrical Services</h1>
-                <p class="subtitle">From bathroom transformations to electrical upgrades, we transform homes in Linden, NJ and surrounding areas with quality craftsmanship and integrated expertise.</p>
-                <div class="hero-buttons">
+                <span class="badge fade-in"><i class="fas fa-shield-alt"></i> Licensed, Bonded & Insured</span>
+                <h1 class="slide-up">Expert Home Renovations <span class="primary-color">&</span> Electrical Services</h1>
+                <div class="section-divider"></div>
+                <p class="subtitle slide-up" style="transition-delay: 0.1s;">From bathroom transformations to electrical upgrades, we transform homes in Linden, NJ and surrounding areas with quality craftsmanship and integrated expertise.</p>
+                <div class="hero-buttons fade-in" style="transition-delay: 0.2s;">
                     <a href="contact.html#consultation" class="button button-primary">Get a Free Consultation</a>
                     <a href="portfolio.html" class="button button-secondary">View Our Portfolio</a>
                 </div>
@@ -60,25 +66,47 @@
         <!-- Services Section -->
         <section class="services" id="services">
             <div class="container">
-                <h2>Our Services</h2>
+                <h2 class="slide-up">Our Services</h2>
+                <p class="subtitle text-center mb-30 fade-in">We provide comprehensive home renovation and electrical solutions under one roof</p>
+                
                 <div class="service-columns">
-                    <div class="service-column">
-                        <i class="fas fa-home service-icon"></i>
+                    <div class="service-column scale-in" style="transition-delay: 0.1s;">
+                        <div class="feature-icon"><i class="fas fa-home"></i></div>
                         <h3>Complete Renovations</h3>
-                        <p>Full-scale remodeling for kitchens, bathrooms, and living spaces.</p>
-                        <a href="services.html#renovations" class="learn-more">Learn More &rarr;</a>
+                        <div class="section-highlight">
+                            <ul>
+                                <li class="icon-inline"><i class="fas fa-check"></i> Kitchen & Bathroom Remodeling</li>
+                                <li class="icon-inline"><i class="fas fa-check"></i> Basement Finishing</li>
+                                <li class="icon-inline"><i class="fas fa-check"></i> Living Space Transformations</li>
+                            </ul>
+                        </div>
+                        <a href="services.html#renovations" class="learn-more icon-inline">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <div class="service-column">
-                        <i class="fas fa-bolt service-icon"></i>
+                    
+                    <div class="service-column scale-in" style="transition-delay: 0.2s;">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
                         <h3>Electrical Services</h3>
-                        <p>Panel upgrades, wiring, lighting, smart home integration, and safety checks.</p>
-                        <a href="services.html#electrical" class="learn-more">Learn More &rarr;</a>
+                        <div class="section-highlight">
+                            <ul>
+                                <li class="icon-inline"><i class="fas fa-check"></i> Panel Upgrades & Wiring</li>
+                                <li class="icon-inline"><i class="fas fa-check"></i> Lighting Installation</li>
+                                <li class="icon-inline"><i class="fas fa-check"></i> Smart Home Integration</li>
+                            </ul>
+                        </div>
+                        <a href="services.html#electrical" class="learn-more icon-inline">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <div class="service-column">
-                        <i class="fas fa-tools service-icon"></i>
+                    
+                    <div class="service-column scale-in" style="transition-delay: 0.3s;">
+                        <div class="feature-icon"><i class="fas fa-tools"></i></div>
                         <h3>Home Improvements</h3>
-                        <p>Tile, carpentry, drywall, painting, fixture replacements, and general repairs.</p>
-                        <a href="services.html#improvements" class="learn-more">Learn More &rarr;</a>
+                        <div class="section-highlight">
+                            <ul>
+                                <li class="icon-inline"><i class="fas fa-check"></i> Flooring & Fixtures</li>
+                                <li class="icon-inline"><i class="fas fa-check"></i> Painting & Drywall</li>
+                                <li class="icon-inline"><i class="fas fa-check"></i> Custom Built-ins</li>
+                            </ul>
+                        </div>
+                        <a href="services.html#improvements" class="learn-more icon-inline">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -186,69 +214,74 @@
         </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-widgets">
-                <!-- Widget 1: Logo & Description -->
                 <div class="footer-widget">
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo-white.png" alt="Top Notch Renovations Logo">Top Notch Renovations</a>
+                        <a href="index.html">
+                            <svg width="180" height="40" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Home Icon -->
+                                <g transform="translate(10, 30)">
+                                    <path d="M0,20 L0,8 L10,-2 L20,8 L20,20 Z" fill="#FFF" />
+                                    <path d="M-2,9 L10,-3 L22,9 L18,9 L10,-1 L2,9 Z" fill="#F47B20" />
+                                    <rect x="8" y="12" width="4" height="8" fill="#F47B20" />
+                                    <rect x="3" y="10" width="4" height="4" fill="white" />
+                                    <rect x="13" y="10" width="4" height="4" fill="white" />
+                                </g>
+                                <text x="38" y="30" font-family="Montserrat, Arial" font-size="20" fill="#FFF" font-weight="bold">TOP NOTCH</text>
+                                <text x="38" y="50" font-family="Montserrat, Arial" font-size="16" fill="#FFF">RENOVATIONS</text>
+                            </svg>
+                        </a>
                     </div>
-                    <p>Transforming homes with quality craftsmanship and integrated expertise in renovations and electrical services.</p>
-                    <p>Licensed, Bonded & Insured</p>
-                    <div class="social-links">
+                    <p>From complete renovations to electrical services and home improvements, we deliver quality craftsmanship and integrated expertise under one roof.</p>
+                    <p class="fade-in icon-inline"><i class="fas fa-certificate"></i> Licensed, Bonded & Insured</p>
+                    <div class="social-icons">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
-                <!-- Widget 2: Quick Links -->
                 <div class="footer-widget">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="process.html">Our Process</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="index.html" class="icon-inline"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html" class="icon-inline"><i class="fas fa-users"></i> About Us</a></li>
+                        <li><a href="services.html" class="icon-inline"><i class="fas fa-tools"></i> Services</a></li>
+                        <li><a href="portfolio.html" class="icon-inline"><i class="fas fa-images"></i> Portfolio</a></li>
+                        <li><a href="contact.html" class="icon-inline"><i class="fas fa-envelope"></i> Contact Us</a></li>
                     </ul>
                 </div>
 
-                <!-- Widget 3: Services -->
                 <div class="footer-widget">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="services.html#renovations">Complete Renovations</a></li>
-                        <li><a href="services.html#electrical">Electrical Services</a></li>
-                        <li><a href="services.html#improvements">Home Improvements</a></li>
-                        <li><a href="services.html#kitchens">Kitchen Remodeling</a></li>
-                        <li><a href="services.html#bathrooms">Bathroom Remodeling</a></li>
-                        <li><a href="services.html#smart-home">Smart Home Integration</a></li>
+                        <li><a href="services.html#renovations" class="icon-inline"><i class="fas fa-home"></i> Complete Renovations</a></li>
+                        <li><a href="services.html#electrical" class="icon-inline"><i class="fas fa-bolt"></i> Electrical Services</a></li>
+                        <li><a href="services.html#improvements" class="icon-inline"><i class="fas fa-hammer"></i> Home Improvements</a></li>
                     </ul>
                 </div>
 
-                <!-- Widget 4: Contact Info -->
                 <div class="footer-widget">
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
-                        <li><i class="fas fa-phone"></i> (908) 555-7890</li>
-                        <li><i class="fas fa-envelope"></i> info@topnotchrenovations.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Linden, NJ 07036</li>
-                        <li><i class="fas fa-globe"></i> Serving Union County and surrounding areas</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+19084945208">(908) 494-5208</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:sales@handymantopnotch.com">sales@handymantopnotch.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> 1121 Clark St, Linden, NJ, 07036</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
                     </ul>
                     <a href="contact.html" class="button">Get a Free Consultation</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Top Notch Renovations & Home Services. All Rights Reserved.</p>
-                <p class="designer-credit">Website by <a href="#">Utak West</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>
