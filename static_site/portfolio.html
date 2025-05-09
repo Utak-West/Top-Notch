@@ -19,7 +19,7 @@
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Top Notch Renovations Logo">Top Notch Renovations</a>
+                <a href="index.html"><img src="images/top-notch-logo.svg" alt="Top Notch Renovations Logo" style="display: block; height: 50px; width: auto;"></a>
             </div>
             <nav class="main-navigation">
                 <ul>
@@ -32,10 +32,10 @@
                 </ul>
             </nav>
             <div class="header-contact">
-                <span class="phone"><i class="fas fa-phone"></i> (908) 555-7890</span>
+                <span class="phone"><i class="fas fa-phone"></i> (908) 555-1234</span>
                 <a href="contact.html" class="button">Get a Free Quote</a>
             </div>
-            <button class="mobile-menu-toggle">
+            <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -73,7 +73,7 @@
         <!-- Portfolio Grid -->
         <section class="portfolio-grid">
             <div class="container">
-                <div class="portfolio-items">
+                <div class="portfolio-items" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; margin: 0 auto;">
                     <!-- Kitchen Project 1 -->
                     <div class="portfolio-item" data-category="kitchen">
                         <div class="portfolio-image">
@@ -275,14 +275,14 @@
                 <!-- Widget 1: Logo & Description -->
                 <div class="footer-widget">
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo-white.png" alt="Top Notch Renovations Logo">Top Notch Renovations</a>
+                        <a href="index.html"><img src="images/top-notch-logo-white.svg" alt="Top Notch Renovations Logo" style="display: block; height: 50px; width: auto;"></a>
                     </div>
                     <p>Transforming homes with quality craftsmanship and integrated expertise in renovations and electrical services.</p>
                     <p>Licensed, Bonded & Insured</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Facebook" rel="noopener" tabindex="0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram" rel="noopener" tabindex="0"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn" rel="noopener" tabindex="0"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                     </div>
                 </div>
 
@@ -316,10 +316,10 @@
                 <div class="footer-widget">
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
-                        <li><i class="fas fa-phone"></i> (908) 555-7890</li>
-                        <li><i class="fas fa-envelope"></i> info@topnotchrenovations.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Linden, NJ 07036</li>
-                        <li><i class="fas fa-globe"></i> Serving Union County and surrounding areas</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+19085551234">(908) 555-1234</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@topnotchrenovations.com">info@topnotchrenovations.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Linden, NJ</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
                     </ul>
                     <a href="contact.html" class="button">Get a Free Consultation</a>
                 </div>

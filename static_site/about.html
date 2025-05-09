@@ -3,42 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Top Notch Renovations & Home Services</title>
+    <title>About Us - Top Notch Renovations & Home Services | Linden, NJ</title>
+    <meta name="description" content="Learn about Top Notch Renovations & Home Services in Linden, NJ. Licensed, bonded, and insured experts in home renovations and electrical services.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Enhancement CSS to handle missing images and improve responsiveness -->
     <link rel="stylesheet" href="css/enhancements.css">
-    <!-- Add links to Google Fonts: Montserrat & Open Sans -->
+    <link rel="stylesheet" href="css/wilmer-theme.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style-fixes.css">
+    <link rel="stylesheet" href="css/client-fixes.css">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="site-header">
+    <!-- Header Wrapper - Contains both top bar and main header -->
+    <div class="header-wrapper">
+        <!-- Top Bar Section -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-left">
+                    <a href="tel:+19085551234" class="phone"><i class="fas fa-phone"></i> (908) 555-1234</a>
+                </div>
+                <div class="top-bar-right">
+                    <a href="contact.html" class="button">Get Your Free Quote</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Header Section -->
+        <header class="site-header">
         <div class="container">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Top Notch Renovations Logo">Top Notch Renovations</a>
+            <div class="site-logo">
+                <a href="index.html"><img src="images/top-notch-logo.svg" alt="Top Notch Renovations Logo"></a>
             </div>
             <nav class="main-navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="current-menu-item"><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="process.html">Our Process</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-contact">
-                <span class="phone"><i class="fas fa-phone"></i> (908) 555-7890</span>
-                <a href="contact.html" class="button">Get a Free Quote</a>
-            </div>
-            <button class="mobile-menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+                <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
@@ -46,230 +62,248 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>About Our Company</h1>
-            <p class="subtitle">Learn more about Top Notch Renovations & Home Services and our dedication to quality craftsmanship</p>
+            <h1>About Top Notch Renovations & Home Services</h1>
+            <p class="subtitle">Your trusted partner for quality home transformations in Linden, NJ and beyond. Meet the expert combining electrical mastery with renovation artistry.</p>
         </div>
     </section>
 
     <main>
-        <!-- About Company Section -->
-        <section class="about-company">
-            <div class="container">
-                <div class="about-wrapper">
-                    <div class="about-content">
-                        <h2>Our Story</h2>
-                        <p>Founded in 2010 by Pedro Ribeiro, Top Notch Renovations & Home Services was born from a passion for quality craftsmanship and a vision to provide integrated renovation and electrical services under one roof.</p>
-                        
-                        <p>After spending over a decade working for various construction and electrical companies throughout New Jersey, Pedro recognized a common frustration among homeowners: the disconnect between renovation contractors and electrical specialists often led to project delays, communication issues, and inconsistent quality.</p>
-                        
-                        <p>Drawing on his dual expertise in both fields, Pedro established Top Notch with a simple mission: to deliver seamless, high-quality home transformations by bringing renovation and electrical services together under one cohesive team.</p>
-                        
-                        <h3>Our Mission</h3>
-                        <p>To transform homes with quality craftsmanship, integrated expertise, and exceptional customer service that exceeds expectations and creates spaces our clients love to live in.</p>
-                        
-                        <h3>Our Values</h3>
-                        <ul>
-                            <li><strong>Integrity:</strong> We operate with honesty and transparency in every aspect of our business.</li>
-                            <li><strong>Quality:</strong> We never compromise on materials or workmanship.</li>
-                            <li><strong>Reliability:</strong> We honor our commitments with consistent, dependable service.</li>
-                            <li><strong>Innovation:</strong> We continuously improve our methods and stay current with industry trends.</li>
-                            <li><strong>Customer-Focused:</strong> We listen carefully to our clients' needs and work collaboratively to achieve their vision.</li>
-                        </ul>
+        <!-- About Hero Section -->
+        <section class="about-hero" style="background-color: #2D3B71; padding: 60px 0; color: white;">
+            <div class="container about-container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+                <div class="about-image" style="flex: 0 0 40%;">
+                    <div style="width: 100%; margin: 0 auto; border: 4px solid #F47B20; box-shadow: 0 5px 15px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80" alt="Professional contractor at work" style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 15px; background: rgba(244, 123, 32, 0.1);">
+                            <span class="badge" style="display: inline-flex; align-items: center; margin: 0;"><i class="fas fa-shield-alt"></i> Licensed, Bonded & Insured</span>
+                        </div>
                     </div>
-                    <div class="about-image-container">
-                        <img src="images/about-company.jpg" alt="Top Notch Renovations Team">
-                        <div class="credentials">
-                            <div class="credential">
-                                <i class="fas fa-certificate"></i>
-                                <h4>Licensed</h4>
-                                <p>NJ Home Improvement Contractor #13VH12345600</p>
-                            </div>
-                            <div class="credential">
-                                <i class="fas fa-shield-alt"></i>
-                                <h4>Bonded</h4>
-                                <p>Full financial protection for your project</p>
-                            </div>
-                            <div class="credential">
-                                <i class="fas fa-check-circle"></i>
-                                <h4>Insured</h4>
-                                <p>Comprehensive liability and workers' compensation</p>
-                            </div>
+                </div>
+                <div class="about-text" style="flex: 1 1 500px; color: white;">
+                    <h2 class="slide-up active" style="color: white; margin-bottom: 20px; font-size: 32px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Our Story: Integrated Expertise Under One Roof</h2>
+                    <p>Top Notch Renovations & Home Services was founded by Pedro Ribeiro with a clear vision: to provide homeowners in Linden, NJ, and surrounding areas with a single, reliable source for both high-quality home renovations and expert electrical services. Pedro, a licensed Master Electrician with extensive experience in general contracting, recognized the frustration homeowners faced coordinating separate contractors for projects involving both disciplines. By integrating these skills, Top Notch eliminates communication gaps, streamlines project timelines, and ensures a cohesive, high-quality finish for every job.</p>
+                    
+                    <p>Since 2015, our mission has been built on quality, reliability, and complete customer satisfaction. We treat every home as if it were our own, applying meticulous attention to detail and using durable materials to create spaces that are not only beautiful but also functional and safe.</p>
+                    
+                    <h3>Meet Pedro Ribeiro</h3>
+                    <p>Pedro Ribeiro is the heart and hands behind Top Notch Renovations. With over 15 years of combined experience, he holds a Master Electrician license and possesses a deep understanding of all aspects of home construction and renovation. His passion lies in problem-solving and helping homeowners realize the full potential of their living spaces, ensuring every project, big or small, is executed with precision and care.</p>
+
+                    <h3>Our Values & Approach</h3>
+                    <ul>
+                        <li><strong>Quality Craftsmanship:</strong> We take immense pride in the details, delivering meticulous work and results built to last.</li>
+                        <li><strong>Reliability & Punctuality:</strong> We respect your time. We show up as scheduled, communicate proactively, and adhere to project timelines.</li>
+                        <li><strong>Integrated Solutions:</strong> Our unique combination of electrical and renovation expertise ensures seamless project execution without the hassle of managing multiple contractors.</li>
+                        <li><strong>Customer-Centric Focus:</strong> Your vision and satisfaction drive everything we do. We listen carefully and collaborate closely with you throughout the process.</li>
+                        <li><strong>Transparency & Honesty:</strong> Expect clear communication, detailed quotes, and no hidden fees. We believe in building trust through openness.</li>
+                    </ul>
+                    
+                    <h3>Credentials & Service Area</h3>
+                    <div class="credentials">
+                        <span><i class="fas fa-certificate"></i> Licensed</span>
+                        <span><i class="fas fa-shield-alt"></i> Bonded</span>
+                        <span><i class="fas fa-check-circle"></i> Insured</span>
+                    </div>
+                    <p>We are proud to serve homeowners in Linden, NJ, and neighboring communities, including Rahway, Roselle, Elizabeth, Clark, Cranford, Westfield, Scotch Plains, and surrounding areas. If you're unsure if you fall within our service area, please don't hesitate to contact us.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section class="team-section light-bg">
+            <div class="container">
+                <h2 class="text-center">Our Dedicated Team</h2>
+                <p class="subtitle mb-30 text-center">Meet the skilled professionals who bring your vision to life.</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-member-image" aria-label="Pedro Ribeiro photo">
+                            <img src="https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=440&q=80" alt="Pedro Ribeiro - Master Electrician and Owner" style="width: 100%; height: 220px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: block;">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Pedro Ribeiro</h3>
+                            <p class="team-member-title">Owner & Master Electrician</p>
+                            <p>Pedro brings 15+ years of experience in both electrical work and general contracting, ensuring every project meets the highest standards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image" aria-label="Michael Torres photo">
+                            <img src="https://images.unsplash.com/photo-1508341591423-4347099e1f19?auto=format&fit=crop&w=440&q=80" alt="Michael Torres - Project Manager" style="width: 100%; height: 220px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: block;">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Michael Torres</h3>
+                            <p class="team-member-title">Project Manager</p>
+                            <p>Michael oversees project execution, ensuring timelines are met and every detail aligns with the client's vision.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image" aria-label="Sarah Johnson photo">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=440&q=80" alt="Sarah Johnson - Designer" style="width: 100%; height: 220px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: block;">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="team-member-title">Client Relations & Design</p>
+                            <p>Sarah helps clients transform their ideas into practical design plans and ensures a smooth communication process throughout each project.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Team Section -->
-        <section class="team-section">
+        <!-- Why Choose Us Section -->
+        <section style="padding: 80px 0; background-color: #fff;">
             <div class="container">
-                <h2>Meet Our Team</h2>
-                <p class="section-intro">Our skilled professionals bring years of experience and dedication to every project</p>
-                
-                <div class="team-members">
-                    <div class="team-member">
-                        <img src="images/team/pedro.jpg" alt="Pedro Ribeiro">
-                        <h3>Pedro Ribeiro</h3>
-                        <p class="position">Founder & Lead Contractor</p>
-                        <p class="bio">With over 15 years of experience in both electrical and renovation work, Pedro personally oversees every project to ensure the highest standards are met.</p>
+                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 50px;">
+                    <div style="flex: 1 1 400px;">
+                        <h2>Why Choose Top Notch Renovations?</h2>
+                        <p>There are many contractors available, but our unique approach sets us apart:</p>
+                        
+                        <div style="margin-top: 30px;">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                                <div class="feature-content">
+                                    <h3>Dual Expertise</h3>
+                                    <p>Licensed for both electrical work and general contracting, eliminating the need to coordinate multiple contractors and ensuring seamless project execution.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                                <div class="feature-content">
+                                    <h3>Personal Owner Involvement</h3>
+                                    <p>Pedro is directly involved in every project, ensuring the highest standards of quality and direct communication with clients.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                                <div class="feature-content">
+                                    <h3>Transparent Pricing</h3>
+                                    <p>Detailed quotes with no hidden costs or surprise fees. We value honesty and clear communication about project costs.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                                <div class="feature-content">
+                                    <h3>Local Expertise</h3>
+                                    <p>Specialized knowledge of homes in Linden and surrounding areas, including common structural features, code requirements, and historical considerations.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="team-member">
-                        <img src="images/team/maria.jpg" alt="Maria Gonzalez">
-                        <h3>Maria Gonzalez</h3>
-                        <p class="position">Design Consultant</p>
-                        <p class="bio">Maria helps transform client visions into practical, beautiful designs with her keen eye for aesthetics and 8 years of interior design experience.</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="images/team/james.jpg" alt="James Wilson">
-                        <h3>James Wilson</h3>
-                        <p class="position">Lead Electrician</p>
-                        <p class="bio">Specializing in residential electrical systems, James ensures all electrical work is performed to code and with the utmost attention to safety.</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="images/team/anna.jpg" alt="Anna Chen">
-                        <h3>Anna Chen</h3>
-                        <p class="position">Project Manager</p>
-                        <p class="bio">Anna keeps projects on track, coordinating schedules, materials, and communication to ensure a smooth, stress-free experience for clients.</p>
+                    
+                    <div class="work-grid" style="display: flex; flex-wrap: wrap; gap: 20px; margin: 5px; padding-right: 5px;">
+                        <div class="work-image" style="flex: 1 1 calc(50% - 10px); min-width: 250px; height: 250px; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); margin: 5px;">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=400&q=80" alt="Kitchen Renovation Project" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="work-image" style="flex: 1 1 calc(50% - 10px); min-width: 250px; height: 250px; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); margin: 5px;">
+                            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=400&q=80" alt="Bathroom Remodel" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="work-image" style="flex: 1 1 calc(50% - 10px); min-width: 250px; height: 250px; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); margin: 5px;">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400&q=80" alt="Electrical Installation" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="work-image" style="flex: 1 1 calc(50% - 10px); min-width: 250px; height: 250px; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); margin: 5px;">
+                            <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=400&q=80" alt="Home Improvement Project" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Service Area Section -->
-        <section class="service-area">
+        <section style="background-color: var(--light-color); padding: 80px 0; text-align: center;">
             <div class="container">
                 <h2>Our Service Area</h2>
-                <p>Based in Linden, NJ, we proudly serve clients throughout Union County and surrounding areas, including:</p>
+                <p class="subtitle mb-30">We proudly serve Linden, NJ and surrounding communities.</p>
                 
-                <div class="locations">
-                    <div class="location-column">
-                        <ul>
-                            <li>Linden</li>
-                            <li>Elizabeth</li>
-                            <li>Rahway</li>
-                            <li>Cranford</li>
-                        </ul>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97087.89183218427!2d-74.307118!3d40.6236584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b2bb27573141%3A0x68e5d4cc2db0ab47!2sLinden%2C%20NJ!5e0!3m2!1sen!2sus!4v1672339045315!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="location-column">
-                        <ul>
-                            <li>Westfield</li>
-                            <li>Clark</li>
-                            <li>Roselle</li>
-                            <li>Union</li>
-                        </ul>
+                    
+                    <div class="location-tags">
+                        <span class="location-tag">Linden</span>
+                        <span class="location-tag">Rahway</span>
+                        <span class="location-tag">Roselle</span>
+                        <span class="location-tag">Elizabeth</span>
+                        <span class="location-tag">Clark</span>
+                        <span class="location-tag">Cranford</span>
+                        <span class="location-tag">Westfield</span>
+                        <span class="location-tag">Scotch Plains</span>
                     </div>
-                    <div class="location-column">
-                        <ul>
-                            <li>Scotch Plains</li>
-                            <li>Fanwood</li>
-                            <li>Springfield</li>
-                            <li>Summit</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <p class="note">Not in our service area? Contact us anyway – we may be able to accommodate your project depending on scope and schedule.</p>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="testimonials" id="testimonials">
-            <div class="container">
-                <h2>What Our Clients Say</h2>
-                <div class="testimonial-slider">
-                    <div class="testimonial">
-                        <p>"Top Notch completely transformed our outdated kitchen into a beautiful, functional space. Pedro and his team were professional, skilled, and finished on time and within budget. We couldn't be happier!"</p>
-                        <cite>- Maria Thompson, Linden</cite>
-                    </div>
-                    <div class="testimonial">
-                        <p>"After experiencing electrical issues in our older home, Top Notch provided a thorough assessment and implemented lasting solutions. Their knowledge of both electrical systems and renovation work made the entire process seamless."</p>
-                        <cite>- Robert Johnson, Cranford</cite>
-                    </div>
-                    <div class="testimonial">
-                        <p>"Pedro and his team renovated our master bathroom and the results exceeded our expectations. Their attention to detail and problem-solving abilities were impressive. We've already hired them for our kitchen remodel!"</p>
-                        <cite>- Jennifer Adams, Westfield</cite>
-                    </div>
-                </div>
-                <div class="slider-controls">
-                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                    
+                    <p style="margin-top: 20px;">Not sure if we serve your area? <a href="contact.html">Contact us</a> to find out!</p>
                 </div>
             </div>
         </section>
 
         <!-- Call-to-Action Section -->
-        <section class="cta" id="cta">
+        <section class="cta" id="cta-about">
             <div class="container">
-                <h2>Ready to Start Your Project?</h2>
-                <p>Contact us today for a free consultation and quote. Let's bring your vision to life with quality craftsmanship and attention to detail.</p>
+                <h2>Experience the Top Notch Difference</h2>
+                <p>Ready to discuss your next home project? Contact us for a free, no-obligation consultation.</p>
                 <a href="contact.html#consultation" class="button button-primary">Get Your Free Consultation</a>
             </div>
         </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-widgets">
-                <!-- Widget 1: Logo & Description -->
                 <div class="footer-widget">
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo-white.png" alt="Top Notch Renovations Logo">Top Notch Renovations</a>
+                        <a href="index.html"><img src="images/top-notch-logo-white.svg" alt="Top Notch Renovations Logo" style="display: block; height: 50px; width: auto;"></a>
                     </div>
-                    <p>Transforming homes with quality craftsmanship and integrated expertise in renovations and electrical services.</p>
+                    <p>From complete renovations to electrical services and home improvements, we deliver quality craftsmanship and integrated expertise under one roof.</p>
                     <p>Licensed, Bonded & Insured</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook" rel="noopener" tabindex="0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram" rel="noopener" tabindex="0"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn" rel="noopener" tabindex="0"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                     </div>
                 </div>
 
-                <!-- Widget 2: Quick Links -->
                 <div class="footer-widget">
                     <h4>Quick Links</h4>
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="process.html">Our Process</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
 
-                <!-- Widget 3: Services -->
                 <div class="footer-widget">
                     <h4>Our Services</h4>
                     <ul>
                         <li><a href="services.html#renovations">Complete Renovations</a></li>
                         <li><a href="services.html#electrical">Electrical Services</a></li>
                         <li><a href="services.html#improvements">Home Improvements</a></li>
-                        <li><a href="services.html#kitchens">Kitchen Remodeling</a></li>
-                        <li><a href="services.html#bathrooms">Bathroom Remodeling</a></li>
-                        <li><a href="services.html#smart-home">Smart Home Integration</a></li>
                     </ul>
                 </div>
 
-                <!-- Widget 4: Contact Info -->
                 <div class="footer-widget">
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
-                        <li><i class="fas fa-phone"></i> (908) 555-7890</li>
-                        <li><i class="fas fa-envelope"></i> info@topnotchrenovations.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Linden, NJ 07036</li>
-                        <li><i class="fas fa-globe"></i> Serving Union County and surrounding areas</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+19085551234">(908) 555-1234</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@topnotchrenovations.com">info@topnotchrenovations.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Linden, NJ</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
                     </ul>
                     <a href="contact.html" class="button">Get a Free Consultation</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Top Notch Renovations & Home Services. All Rights Reserved.</p>
-                <p class="designer-credit">Website by <a href="#">Utak West</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>

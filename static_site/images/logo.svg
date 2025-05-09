@@ -7,16 +7,16 @@
     <!-- Roof -->
     <path d="M-2,9 L10,-3 L22,9 L18,9 L10,-1 L2,9 Z" fill="#F47B20" />
     <!-- Door -->
-    <rect x="8" y="12" width="4" height="8" fill="#F47B20" />
-    <!-- Window -->
-    <rect x="3" y="10" width="4" height="4" fill="white" />
-    <rect x="13" y="10" width="4" height="4" fill="white" />
+    <rect x="8" y="13" width="4" height="7" fill="#F47B20" />
+    <!-- Windows - better proportioned -->
+    <rect x="3" y="9" width="3.5" height="3.5" fill="white" rx="0.5" />
+    <rect x="13.5" y="9" width="3.5" height="3.5" fill="white" rx="0.5" />
   </g>
   
   <!-- Text -->
   <text x="38" y="30" font-family="Montserrat, Arial" font-size="22" fill="#F47B20" font-weight="bold">TOP NOTCH</text>
   <text x="38" y="50" font-family="Montserrat, Arial" font-size="18" fill="#2D3B71">RENOVATIONS</text>
   
-  <!-- Optional: Underline or separator -->
+  <!-- Separator -->
   <line x1="38" y1="34" x2="230" y2="34" stroke="#F47B20" stroke-width="2" opacity="0.5" />
 </svg>

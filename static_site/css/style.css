@@ -8,11 +8,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif; /* Headings font */
+    font-family: 'Montserrat', sans-serif;
     margin-top: 0;
     margin-bottom: 0.75em;
-    font-weight: 700; /* Bold headings */
-    color: #2c3e50; /* Dark blue-grey for headings */
+    font-weight: 700;
+    color: var(--secondary-color); /* Ensures heading colors are accessible and consistent */
 }
 
 h1 { font-size: 2.5em; line-height: 1.2; }
@@ -32,10 +32,113 @@ a:hover {
     text-decoration: none;
 }
 
+/* Consistent link styling */
+.learn-more, a.learn-more {
+    color: #3498db !important;
+    background-color: #EBF3FF !important;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.learn-more:hover, a.learn-more:hover {
+    background-color: #D6E9FF !important;
+    color: #2D3B71 !important;
+}
+
+/* Portfolio hover effects fix */
+.portfolio-item:hover .overlay {
+    opacity: 1 !important;
+}
+
+/* Benefits and features icon alignment fix */
+.benefit, .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.benefit i, .feature-item i {
+    color: #F47B20;
+    margin-top: 3px;
+}
+
+/* Fix icon alignment in general */
+.icon-inline {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-inline i {
+    margin-right: 8px;
+}
+
+/* Badge/Status spans: orange background, low opacity, white text */
+span.badge, .team-badge, .status-badge, .about-hero span, .about-hero .badge {
+    background: rgba(244, 123, 32, 0.18) !important;
+    color: #fff !important;
+    padding: 4px 14px;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 8px;
+}
+
+/* About Hero section: all text white */
+.about-hero,
+.about-hero h1,
+.about-hero h2,
+.about-hero h3,
+.about-hero h4,
+.about-hero h5,
+.about-hero h6,
+.about-hero p,
+.about-hero li,
+.about-hero a,
+.about-hero span,
+.about-hero strong {
+    color: #fff !important;
+}
+
+/* Image styling */
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* Remove extra space below images */
+    display: block;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.image-container img,
+.logo-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.02);
 }
 
 .container {
@@ -47,6 +150,61 @@ img {
 
 section {
     padding: 60px 0; /* Standard vertical padding for sections */
+}
+
+/* ===== ACCESSIBILITY FIXES - HIGH PRIORITY ===== */
+/* Ensure black text on white backgrounds and white text on dark backgrounds */
+
+/* 1. Default text color for light backgrounds */
+body, p, h3, h4, h5, h6, .service-card, .team-member-info p,
+.portfolio-info h3, .portfolio-info p, .contact-card h3, .contact-card p,
+.feature-content h3, .feature-content p {
+    color: #222222 !important;
+}
+
+/* 2. White text on dark backgrounds */
+.hero h1, .hero p, .hero .subtitle,
+.cta-bar, .cta-bar a:not(.button),
+.site-footer, .site-footer p, .site-footer .footer-widget p,
+.page-header h1, .page-header p,
+.badge, .button-primary, .button-secondary {
+    color: #ffffff !important;
+}
+
+/* 3. Fix missing images & placeholders */
+img:not([src]), img[src=""], img[src*="placeholder"] {
+    min-height: 100px;
+    background: linear-gradient(135deg, #f5f5f5 25%, #e5e5e5 25%, #e5e5e5 50%, #f5f5f5 50%, #f5f5f5 75%, #e5e5e5 75%);
+    background-size: 20px 20px;
+}
+
+/* 4. Fix team member images */
+.team-member-image {
+    height: 200px;
+    background: linear-gradient(135deg, #f5f5f5 25%, #e5e5e5 25%, #e5e5e5 50%, #f5f5f5 50%, #f5f5f5 75%, #e5e5e5 75%);
+    background-size: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-weight: 500;
+}
+
+/* 5. Improved focus states for keyboard navigation */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+    outline: 3px solid #F47B20 !important;
+    outline-offset: 2px !important;
+}
+
+/* 6. Fix contrast for buttons */
+.button-primary, .button.button-primary, .get-free-quote {
+    color: white !important;
+    background-color: #F47B20 !important;
+}
+
+.button-secondary, .button.button-secondary {
+    color: white !important;
+    background-color: #2D3B71 !important;
 }
 
 /* Buttons */
@@ -61,29 +219,6 @@ section {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     border: 2px solid transparent;
-}
-
-.button-primary {
-    background-color: #3498db; /* Primary blue */
-    color: #fff;
-    border-color: #3498db;
-}
-
-.button-primary:hover {
-    background-color: #2980b9;
-    border-color: #2980b9;
-    color: #fff;
-}
-
-.button-secondary {
-    background-color: transparent;
-    color: #3498db;
-    border-color: #3498db;
-}
-
-.button-secondary:hover {
-    background-color: #3498db;
-    color: #fff;
 }
 
 /* Header Styles */
