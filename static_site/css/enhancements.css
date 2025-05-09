@@ -1,0 +1,448 @@
+/* 
+ * Top Notch Renovations - CSS Enhancements
+ * 
+ * This stylesheet addresses key issues:
+ * 1. Missing images handling
+ * 2. Mobile responsiveness improvements
+ * 3. Layout spacing and alignment adjustments
+ * 4. Placeholder styling for content
+ */
+
+/* ===== 1. MISSING IMAGES HANDLING ===== */
+/* Create attractive placeholders for missing images */
+img:not([src]), 
+img[src=""], 
+img[src="images/logo.png"], 
+img[src="images/logo-white.png"],
+img[src*="placeholder"], 
+img[src*="about-team.jpg"],
+img[src*="portfolio/"],
+img[src*="services/"],
+img[src*="process/"],
+img[src*="team/"] {
+    min-height: 100px;
+    background: linear-gradient(135deg, #e0e0e0 25%, #d0d0d0 25%, #d0d0d0 50%, #e0e0e0 50%, #e0e0e0 75%, #d0d0d0 75%);
+    background-size: 20px 20px;
+    position: relative;
+}
+
+/* Add brand-specific colors to different placeholder types */
+img[src*="logo.png"] {
+    background: linear-gradient(135deg, #3498db 25%, #2980b9 25%, #2980b9 50%, #3498db 50%, #3498db 75%, #2980b9 75%);
+    background-size: 10px 10px;
+    min-height: 40px;
+    min-width: 40px;
+}
+
+img[src*="logo-white.png"] {
+    background: linear-gradient(135deg, #2980b9 25%, #3498db 25%, #3498db 50%, #2980b9 50%, #2980b9 75%, #3498db 75%);
+    background-size: 10px 10px;
+    min-height: 35px;
+    min-width: 35px;
+}
+
+/* Service and portfolio images */
+img[src*="portfolio/"], img[src*="services/"] {
+    min-height: 200px;
+    background: linear-gradient(135deg, #f0f0f0 25%, #e0e0e0 25%, #e0e0e0 50%, #f0f0f0 50%, #f0f0f0 75%, #e0e0e0 75%);
+    background-size: 20px 20px;
+}
+
+/* About and team images */
+img[src*="about-team.jpg"], img[src*="team/"] {
+    min-height: 250px;
+    background: linear-gradient(135deg, #e0e0e0 25%, #d0d0d0 25%, #d0d0d0 50%, #e0e0e0 50%, #e0e0e0 75%, #d0d0d0 75%);
+    background-size: 20px 20px;
+}
+
+/* Hero section styles for missing background image */
+.hero {
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    z-index: -1;
+}
+
+/* ===== 2. MOBILE RESPONSIVENESS IMPROVEMENTS ===== */
+/* Improved mobile menu */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.mobile-menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #2c3e50;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+}
+
+/* Adjust header for better mobile layout */
+@media (max-width: 992px) {
+    .site-header .container {
+        padding: 15px;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .mobile-menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .mobile-menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .site-header .main-navigation {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        z-index: 999;
+    }
+    
+    .site-header .main-navigation.active {
+        display: block;
+    }
+    
+    .site-header .main-navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .site-header .main-navigation li {
+        margin: 10px 0;
+        margin-left: 0;
+    }
+}
+
+/* Better small screen adaptations */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.75em; }
+    h3 { font-size: 1.3em; }
+    
+    .hero {
+        padding: 80px 0 60px;
+    }
+    
+    .hero h1 {
+        font-size: 2em;
+        line-height: 1.3;
+    }
+    
+    .hero .subtitle {
+        font-size: 1em;
+    }
+    
+    .hero .hero-buttons .button {
+        display: block;
+        margin: 15px auto;
+        width: 80%;
+        max-width: 300px;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    .service-columns, 
+    .process-steps-container,
+    .portfolio-items,
+    .portfolio-filter ul,
+    .about-container,
+    .team-members,
+    .footer-widgets {
+        flex-direction: column;
+    }
+    
+    .about-image,
+    .about-text,
+    .service-column,
+    .process-step,
+    .portfolio-item,
+    .team-member,
+    .footer-widget {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .site-header .header-contact {
+        display: none;
+    }
+}
+
+/* Fix for very small screens */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    
+    .hero .subtitle {
+        font-size: 0.9em;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    .site-header .logo a {
+        font-size: 1.3em;
+    }
+}
+
+/* ===== 3. LAYOUT ADJUSTMENTS ===== */
+/* Consistent margin and padding */
+.container {
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Better spacing for content sections */
+.service-column,
+.process-step,
+.portfolio-item,
+.testimonial,
+.footer-widget {
+    margin-bottom: 30px;
+}
+
+/* Fix alignment in about section */
+.about-container {
+    align-items: center;
+    gap: 50px;
+}
+
+/* Improve portfolio grid layout */
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Fix testimonial alignment */
+.testimonial-slider {
+    margin: 0 auto;
+    position: relative;
+    max-width: 800px;
+}
+
+/* Improve footer layout */
+.footer-widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* ===== 4. PLACEHOLDER STYLING ===== */
+/* Style placeholder content visually */
+[class*="placeholder"], 
+.logo a:contains("[Logo Placeholder]"),
+.portfolio-item h5:contains("[Project Title"), 
+.testimonial p:contains("[Client Testimonial"), 
+.footer-widget li:contains("[") {
+    position: relative;
+    color: #555;
+}
+
+/* Beautify service icons */
+.service-icon,
+.process-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #eaf2f8;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: #3498db;
+    font-size: 2.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-column:hover .service-icon,
+.process-step:hover .process-icon {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Button hover effects */
+.button {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Card styling for content sections */
+.service-column,
+.process-step,
+.portfolio-item,
+.testimonial {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-column:hover,
+.process-step:hover,
+.portfolio-item:hover,
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Add placeholder badge for images */
+img:not([src]), 
+img[src=""], 
+img[src*="placeholder"], 
+img[src*="about-team.jpg"],
+img[src*="portfolio/"],
+img[src*="services/"],
+img[src*="process/"],
+img[src*="team/"]:after {
+    content: "Image Placeholder";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Improve testimonial slider */
+.slider-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider-controls button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slider-controls button:hover {
+    background: #2980b9;
+}
+
+/* Fix contact form responsiveness */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Enhance headings with subtle decoration */
+h2:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: a3px;
+    background: #3498db;
+    margin: 15px auto 30px;
+}
+
+/* Fix text contrast issues */
+.hero .subtitle, 
+.footer-widget p,
+.footer-widget li a {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Improve social links styling */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    background: #3498db;
+}
+
+/* Better focus states for accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+/* Fix navigation active state */
+.site-header .main-navigation a.active {
+    color: #3498db;
+    border-bottom-color: #3498db;
+}
