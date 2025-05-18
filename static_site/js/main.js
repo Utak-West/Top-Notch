@@ -4,6 +4,26 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle scroll animations
+    const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementBottom = element.getBoundingClientRect().bottom;
+            const isElementVisible = elementTop < window.innerHeight && elementBottom > 0;
+
+            if (isElementVisible && !element.classList.contains('visible')) {
+                element.classList.add('visible');
+            }
+        });
+    };
+
+    // Initial check
+    animateOnScroll();
+
+    // Add scroll event listener
+    window.addEventListener('scroll', animateOnScroll);
+
     // Mobile menu toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const mainNavigation = document.querySelector('.main-navigation');
