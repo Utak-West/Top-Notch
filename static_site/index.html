@@ -18,6 +18,10 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/wilmer-consolidated.css">
+    <link rel="stylesheet" href="css/fixes.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/hero.css">
     <!-- Include Swiper CSS for sliders -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 
@@ -113,46 +117,11 @@
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="header-wrapper">
-        <div class="top-bar">
-            <div class="container">
-                <div class="top-bar-content">
-                    <div class="top-bar-left">
-                        <span class="badge"><i class="fas fa-certificate"></i> Licensed, Bonded & Insured</span>
-                    </div>
-                    <div class="top-bar-right">
-                        <a href="tel:+19085551234" class="phone-number">(908) 555-1234</a>
-                        <a href="contact.html" class="button button-secondary">Free Consultation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-header">
-            <div class="container">
-                <div class="header-content">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/top-notch-logo.svg" alt="Top Notch Renovations Logo" loading="eager">
-                        </a>
-                    </div>
-                    <nav class="main-navigation">
-                        <ul>
-                            <li class="current-menu-item"><a href="index.html">Home</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
         <!-- Top Bar Section -->
         <div class="top-bar" role="banner">
             <div class="container">
                 <div class="top-bar-left">
+                    <span class="badge"><i class="fas fa-certificate" aria-hidden="true"></i> Licensed, Bonded & Insured</span>
                     <a href="tel:+19085551234" class="phone" aria-label="Call us at (908) 555-1234">
                         <i class="fas fa-phone" aria-hidden="true"></i> (908) 555-1234
                     </a>
@@ -164,30 +133,31 @@
         </div>
 
         <!-- Main Header Section -->
-        <header class="site-header">
-        <div class="container">
-            <div class="site-logo">
-                <a href="index.html"><img src="images/top-notch-logo.svg" alt="Top Notch Renovations Logo"></a>
+        <div class="site-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="index.html"><img src="images/top-notch-logo.svg" alt="Top Notch Renovations Logo" loading="eager"></a>
+                </div>
+                <nav class="main-navigation">
+                    <ul>
+                        <li class="current-menu-item"><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <nav class="main-navigation">
-                <ul>
-                    <li class="current-menu-item"><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
     </header>
 
     <main id="main-content" role="main">
         <!-- Hero Section -->
         <section class="hero" role="region" aria-label="Welcome to Top Notch Renovations">
-            <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1600&q=80');"></div>
+            <div class="hero-background"></div>
             <div class="hero-overlay"></div>
             <div class="hero-content animate-on-scroll">
                 <span class="badge fade-in" role="status"><i class="fas fa-shield-alt" aria-hidden="true"></i> Licensed, Bonded & Insured</span>
@@ -195,11 +165,11 @@
                 <p class="hero-subtitle">From bathroom transformations to electrical upgrades, we transform homes in Linden, NJ and surrounding areas with quality craftsmanship and integrated expertise.</p>
                 <div class="hero-buttons">
                     <a href="services.html" class="button" aria-label="View our services">
-                        <i class="fas fa-tools" aria-hidden="true" style="margin-right: 8px;"></i>
+                        <i class="fas fa-tools" aria-hidden="true"></i>
                         <span>Explore Services</span>
                     </a>
                     <a href="contact.html" class="button btn-primary" aria-label="Schedule a consultation">
-                        <i class="fas fa-calendar" aria-hidden="true" style="margin-right: 8px;"></i>
+                        <i class="fas fa-calendar" aria-hidden="true"></i>
                         <span>Free Consultation</span>
                     </a>
                 </div>
@@ -267,19 +237,19 @@
         </section>
 
         <!-- About Section -->
-        <section class="about" id="about" style="background-color: var(--light-bg);">
+        <section class="about" id="about">
             <div class="container">
-                <div class="grid" style="grid-template-columns: 1fr 1fr; grid-gap: 50px; align-items: center;">
+                <div class="grid-2-columns">
                     <div class="about-image animate-on-scroll">
-                        <img src="https://images.unsplash.com/photo-1564182842519-8a3b2af3e228?auto=format&fit=crop&w=1600&q=80" alt="About Top Notch Renovations - Professional renovation crew at work" style="width: 100%; height: 500px; object-fit: cover; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                        <img src="https://images.unsplash.com/photo-1564182842519-8a3b2af3e228?auto=format&fit=crop&w=1600&q=80" alt="About Top Notch Renovations - Professional renovation crew at work">
                     </div>
                     <div class="about-content animate-on-scroll">
-                        <div class="section-header" style="text-align: left; margin-bottom: 30px;">
-                            <h2 style="position: relative; padding-bottom: 20px;">About Top Notch</h2>
+                        <div class="section-header-left">
+                            <h2>About Top Notch</h2>
                         </div>
-                        <p style="margin-bottom: 25px;">Founded by Pedro Ribeiro, Top Notch delivers superior home renovation and electrical services throughout Linden, NJ and surrounding communities. With over 15 years of experience, we combine skilled craftsmanship with integrated expertise to deliver exceptional results.</p>
-                        <p style="margin-bottom: 30px;">Our team of dedicated professionals is committed to turning your vision into reality, ensuring every project is completed with precision, quality, and attention to detail.</p>
-                        <div class="badges" style="display: flex; gap: 15px; margin-bottom: 30px;">
+                        <p>Founded by Pedro Ribeiro, Top Notch delivers superior home renovation and electrical services throughout Linden, NJ and surrounding communities. With over 15 years of experience, we combine skilled craftsmanship with integrated expertise to deliver exceptional results.</p>
+                        <p class="mb-30">Our team of dedicated professionals is committed to turning your vision into reality, ensuring every project is completed with precision, quality, and attention to detail.</p>
+                        <div class="badges">
                             <span class="badge"><i class="fas fa-certificate"></i> Licensed</span>
                             <span class="badge"><i class="fas fa-shield-alt"></i> Bonded</span>
                             <span class="badge"><i class="fas fa-check-circle"></i> Insured</span>
@@ -298,7 +268,7 @@
                     <p class="animate-on-scroll">Our systematic approach ensures that your project is completed smoothly, efficiently, and with the highest standards of quality.</p>
                 </div>
 
-                <div class="process-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div class="process-list">
                     <div class="process-item animate-on-scroll">
                         <h3 class="process-title" data-number="1">Consultation</h3>
                         <div class="process-description">
@@ -348,14 +318,14 @@
                     </div>
                 </div>
 
-                <div class="text-center" style="margin-top: 60px;">
+                <div class="text-center text-center-margin">
                     <a href="process.html" class="btn">Explore Our Full Process</a>
                 </div>
             </div>
         </section>
 
         <!-- Portfolio Preview Section -->
-        <section class="portfolio-preview" id="portfolio" style="background-color: var(--light-bg);">
+        <section class="portfolio-preview" id="portfolio">
             <div class="container">
                 <div class="section-header">
                     <h2 class="animate-on-scroll">Recent Projects</h2>
@@ -369,7 +339,7 @@
                     <span class="portfolio-filter" data-filter="electrical">Electrical</span>
                 </div>
 
-                <div class="portfolio-items" style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 40px; justify-content: center;">
+                <div class="portfolio-items">
                     <!-- Kitchen Project -->
                     <div class="portfolio-item animate-on-scroll" data-category="kitchen" style="flex: 0 0 calc(33.33% - 20px); max-width: 350px; position: relative; overflow: hidden;">
                         <img
@@ -425,110 +395,19 @@
                     </div>
                 </div>
 
-                <div class="text-center" style="margin-top: 60px;">
-                    <a href="portfolio.html" class="btn btn-primary animate-on-scroll">View Full Portfolio <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></a>
+                <div class="text-center text-center-margin">
+                    <a href="portfolio.html" class="btn btn-primary animate-on-scroll">View Full Portfolio <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio Intro Section -->
-        <section class="portfolio-intro" style="background: #2D3B71; padding: 48px 0 28px 0;">
-            <div class="container">
-                <p class="lead-text" style="color: #fff; font-size: 1.22rem; text-align: center; margin-bottom: 18px;">Browse through our showcase of successful projects that highlight our expertise in home renovations and electrical services. Each project reflects our commitment to quality craftsmanship, attention to detail, and client satisfaction.</p>
-                <!-- Portfolio Categories Navigation -->
-                <div class="portfolio-filter" style="text-align: center;">
-                    <ul style="display: inline-flex; gap: 12px; padding: 0; margin: 0; list-style: none;">
-                        <li><a href="#" class="active" data-filter="all" style="background: rgba(244,123,32,0.18); color: #fff; border-radius: 14px; padding: 7px 18px; font-weight: 600;">All Projects</a></li>
-                        <li><a href="#" data-filter="kitchen" style="background: rgba(244,123,32,0.18); color: #fff; border-radius: 14px; padding: 7px 18px; font-weight: 600;">Kitchens</a></li>
-                        <li><a href="#" data-filter="bathroom" style="background: rgba(244,123,32,0.18); color: #fff; border-radius: 14px; padding: 7px 18px; font-weight: 600;">Bathrooms</a></li>
-                        <li><a href="#" data-filter="electrical" style="background: rgba(244,123,32,0.18); color: #fff; border-radius: 14px; padding: 7px 18px; font-weight: 600;">Electrical</a></li>
-                        <li><a href="#" data-filter="other" style="background: rgba(244,123,32,0.18); color: #fff; border-radius: 14px; padding: 7px 18px; font-weight: 600;">Other Renovations</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <!-- Portfolio Items -->
-        <section class="portfolio-items" style="background: #f8faff; padding: 32px 0;">
-            <div class="container" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
-                <!-- Kitchen Project 1 -->
-                <div class="portfolio-item" style="background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 18px rgba(45,59,113,0.10); max-width: 340px; flex: 1 1 320px; display: flex; flex-direction: column;">
-                    <div class="portfolio-image" style="position: relative;">
-                        <img
-                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 200'%3E%3C/svg%3E"
-                            data-src="images/portfolio/kitchen-modern.jpg"
-                            alt="Modern Kitchen Renovation"
-                            class="portfolio-image lazy"
-                            loading="lazy"
-                            width="340"
-                            height="200"
-                            style="width: 100%; height: 200px; object-fit: cover;"
-                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1604709177225-055f99402ea3';">
-                        <div class="overlay" style="background: rgba(45,59,113,0.63); color: #fff; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s; position:absolute; top:0; left:0; width:100%; height:100%;">
-                            <a href="#project1" class="view-project" style="background: rgba(244,123,32,0.92); color: #fff; padding: 9px 22px; border-radius: 8px; font-weight: 600; text-decoration: none;">View Project</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info" style="padding: 20px 16px 18px 16px; background: #fff; flex: 1 1 auto;">
-                        <h3 style="color: #222; margin-top: 0; margin-bottom: 5px; font-size: 18px;">Modern Kitchen Renovation</h3>
-                        <p style="color: #555; margin: 0;">Linden, NJ</p>
-                    </div>
-                </div>
-                <!-- Bathroom Project 1 -->
-                <div class="portfolio-item" style="background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 18px rgba(45,59,113,0.10); max-width: 340px; flex: 1 1 320px; display: flex; flex-direction: column;">
-                    <div class="portfolio-image" style="position: relative;">
-                        <img src="images/portfolio/bathroom-luxury.jpg" alt="Luxury Bathroom Transformation" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1645327942357-623d7e36b5ba';" style="width:100%; height:200px; object-fit:cover;">
-                        <div class="overlay" style="background: rgba(45,59,113,0.63); color: #fff; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s; position:absolute; top:0; left:0; width:100%; height:100%;">
-                            <a href="#project2" class="view-project" style="background: rgba(244,123,32,0.92); color: #fff; padding: 9px 22px; border-radius: 8px; font-weight: 600; text-decoration: none;">View Project</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info" style="padding: 20px 16px 18px 16px; background: #fff; flex: 1 1 auto;">
-                        <h3 style="color: #222; margin-top: 0; margin-bottom: 5px; font-size: 18px;">Luxury Bathroom Transformation</h3>
-                        <p style="color: #555; margin: 0;">Cranford, NJ</p>
-                    </div>
-                </div>
-                <!-- Electrical Project 1 -->
-                <div class="portfolio-item" style="background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 18px rgba(45,59,113,0.10); max-width: 340px; flex: 1 1 320px; display: flex; flex-direction: column;">
-                    <div class="portfolio-image" style="position: relative;">
-                        <img
-                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 200'%3E%3C/svg%3E"
-                        data-src="images/portfolio/electrical-panel.jpg"
-                        alt="Electrical Panel Upgrade with modern safety features"
-                        class="portfolio-image lazy"
-                        loading="lazy"
-                        width="340"
-                        height="200"
-                        style="width:100%; height:200px; object-fit:cover;"
-                        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a';">
-                        <div class="overlay" style="background: rgba(45,59,113,0.63); color: #fff; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s; position:absolute; top:0; left:0; width:100%; height:100%;">
-                            <a href="#project3" class="view-project" style="background: rgba(244,123,32,0.92); color: #fff; padding: 9px 22px; border-radius: 8px; font-weight: 600; text-decoration: none;">View Project</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info" style="padding: 20px 16px 18px 16px; background: #fff; flex: 1 1 auto;">
-                        <h3 style="color: #222; margin-top: 0; margin-bottom: 5px; font-size: 18px;">Electrical Panel Upgrade</h3>
-                        <p style="color: #555; margin: 0;">Elizabeth, NJ</p>
-                    </div>
-                </div>
-                <!-- Other Project 1 -->
-                <div class="portfolio-item" style="background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 18px rgba(45,59,113,0.10); max-width: 340px; flex: 1 1 320px; display: flex; flex-direction: column;">
-                    <div class="portfolio-image" style="position: relative;">
-                        <img src="images/portfolio/other-renovation.jpg" alt="Custom Basement Renovation" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507089947368-19c1da9775ae';" style="width:100%; height:200px; object-fit:cover;">
-                        <div class="overlay" style="background: rgba(45,59,113,0.63); color: #fff; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s; position:absolute; top:0; left:0; width:100%; height:100%;">
-                            <a href="#project4" class="view-project" style="background: rgba(244,123,32,0.92); color: #fff; padding: 9px 22px; border-radius: 8px; font-weight: 600; text-decoration: none;">View Project</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info" style="padding: 20px 16px 18px 16px; background: #fff; flex: 1 1 auto;">
-                        <h3 style="color: #222; margin-top: 0; margin-bottom: 5px; font-size: 18px;">Custom Basement Renovation</h3>
-                        <p style="color: #555; margin: 0;">Rahway, NJ</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Testimonials Section -->
-        <section class="testimonials" id="testimonials" style="background-color: #EBF3FF; padding: 60px 0;">
+        <section class="testimonials" id="testimonials">
             <div class="container">
-                <h2 style="color: #222; text-align: center; margin-bottom: 40px;">What Our Clients Say</h2>
-                <div class="testimonial-slider" style="max-width: 800px; margin: 0 auto;">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonial-slider">
                     <div class="testimonial" style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: relative;">
                         <div style="position: absolute; top: -15px; left: 30px; color: #F47B20; font-size: 60px;">“</div>
                         <p style="color: #222; font-size: 18px; line-height: 1.6; margin-bottom: 20px; position: relative; z-index: 1;">
@@ -547,29 +426,28 @@
         </section>
 
         <!-- Service Area Map -->
-        <section class="service-area" id="service-area" style="padding: 60px 0; background-color: white;">
+        <section class="service-area" id="service-area">
             <div class="container">
-                <h2 style="color: #222; text-align: center; margin-bottom: 20px;">Our Service Area</h2>
-                <p style="color: #222; text-align: center; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <h2>Our Service Area</h2>
+                <p>
                     We proudly serve Linden, NJ and surrounding communities including Elizabeth, Cranford, Rahway, and Westfield.
                 </p>
-                <div class="map-container" style="position: relative; max-width: 900px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="map-container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48463.43373572807!2d-74.25291141417232!3d40.63746526840737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715244387888!5m2!1sen!2sus"
                         width="100%"
                         height="450"
                         style="border:0;"
                         allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        title="Map showing Top Notch Renovations service areas in Linden, NJ and surrounding communities">
                     </iframe>
                     <div class="map-overlay" style="position: absolute; top: 20px; right: 20px; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                         <h3 style="color: #222; margin-top: 0; margin-bottom: 10px; font-size: 16px;">Areas We Serve</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
-                            <li style="padding: 5px 0; color: #222;"><i class="fas fa-map-marker-alt" style="color: #F47B20; margin-right: 8px;"></i> Linden</li>
-                            <li style="padding: 5px 0; color: #222;"><i class="fas fa-map-marker-alt" style="color: #F47B20; margin-right: 8px;"></i> Elizabeth</li>
-                            <li style="padding: 5px 0; color: #222;"><i class="fas fa-map-marker-alt" style="color: #F47B20; margin-right: 8px;"></i> Cranford</li>
-                            <li style="padding: 5px 0; color: #222;"><i class="fas fa-map-marker-alt" style="color: #F47B20; margin-right: 8px;"></i> Rahway</li>
+                            <li><i class="fas fa-map-marker-alt map-marker-icon"></i> Linden</li>
+                            <li><i class="fas fa-map-marker-alt map-marker-icon"></i> Elizabeth</li>
+                            <li><i class="fas fa-map-marker-alt map-marker-icon"></i> Cranford</li>
+                            <li><i class="fas fa-map-marker-alt map-marker-icon"></i> Rahway</li>
                         </ul>
                     </div>
                 </div>
@@ -577,13 +455,13 @@
         </section>
 
         <!-- Contact CTA -->
-        <section class="contact-cta" id="contact-cta" style="background-color: #2D3B71; padding: 60px 0; color: white; text-align: center;">
+        <section class="contact-cta" id="contact-cta">
             <div class="container">
-                <h2 style="color: white; margin-bottom: 20px;">Ready to Start Your Project?</h2>
-                <p style="color: white; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">Contact us today for a free consultation and quote. We'll help you transform your vision into reality.</p>
+                <h2>Ready to Start Your Project?</h2>
+                <p>Contact us today for a free consultation and quote. We'll help you transform your vision into reality.</p>
                 <a href="contact.html" class="button btn-primary" aria-label="Get a free consultation and quote">
                     <span>Get a Free Quote</span>
-                    <i class="fas fa-arrow-right" aria-hidden="true" style="margin-left: 8px;"></i>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
                 </a>
             </div>
         </section>
@@ -601,14 +479,14 @@
     <!-- Footer -->
     <footer class="site-footer" role="contentinfo">
         <div class="container">
-            <div class="footer-widgets" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+            <div class="footer-widgets">
                 <div class="footer-widget" role="region" aria-label="Company Information">
                     <div class="logo">
                         <a href="index.html">
                             <img
                                 src="images/top-notch-logo-white.svg"
                                 alt="Top Notch Renovations Logo - Your trusted home renovation and electrical services provider"
-                                style="display: block; height: 50px; width: auto;"
+                                class="footer-logo"
                                 loading="eager"
                             >
                         </a>
