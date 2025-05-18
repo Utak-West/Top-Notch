@@ -1,33 +1,25 @@
-# Top Notch Renovations & Home Services - Static Website Build
+# Top Notch Renovations & Home Services - Static Website
 
-This repository contains the static website assets for Top Notch Renovations & Home Services. It was developed as a foundational static build (HTML, CSS, JavaScript) along with comprehensive content drafts and strategic documentation. This package is intended to be migrated into a WordPress environment using the Nexter Pro theme and Elementor Pro page builder, hosted on GoDaddy or a similar platform.
+This repository contains the static website for Top Notch Renovations & Home Services, a home renovation and electrical services company based in Linden, NJ. The website has been cleaned up and consolidated for better performance and maintainability.
 
 ## Project Structure
 
-```
-/top_notch_renovations/
-├── theme/                    # Static HTML, CSS, JS theme files
+```bash
+/Top-Notch/
+├── static_site/              # Static website files
 │   ├── css/
-│   │   └── style.css
+│   │   ├── consolidated.css  # Main consolidated stylesheet
+│   │   ├── wilmer-consolidated.css # Base theme styles
+│   │   └── normalize.css     # CSS normalization
 │   ├── js/
-│   │   └── script.js
-│   ├── images/               # Placeholder for image assets
-│   ├── templates/
-│   │   └── partials/         # Header and footer HTML partials
-│   ├── index.html
+│   │   └── consolidated.js   # Main consolidated JavaScript file
+│   ├── images/               # Website images
+│   ├── index.html            # Main homepage
 │   ├── services.html
 │   ├── about.html
 │   ├── portfolio.html
 │   ├── process.html
 │   └── contact.html
-├── content/                  # Content drafts for website pages
-│   └── pages/
-│       ├── home.md
-│       ├── services.md
-│       ├── about.md
-│       ├── portfolio.md
-│       ├── process.md
-│       └── contact.md
 ├── docs/                     # Planning, strategy, and handover documentation
 │   ├── client_documentation.md
 │   ├── lead_capture_design.md
@@ -40,32 +32,44 @@ This repository contains the static website assets for Top Notch Renovations & H
 └── README.md                 # This file
 ```
 
-## Overview of Assets
+## Recent Changes
 
-*   **`/theme/`**: Contains the static website build.
-    *   `*.html`: HTML files for each main page.
-    *   `/css/style.css`: The primary stylesheet.
-    *   `/js/script.js`: Placeholder for custom JavaScript.
-    *   `/templates/partials/`: Basic header and footer HTML structure.
-*   **`/content/pages/`**: Markdown files with detailed text content for each main page.
-*   **`/docs/`**: Contains all planning, strategy, and handover documentation, including:
-    *   `client_documentation.md`: Detailed guide for migrating to WordPress/Elementor on GoDaddy, and ongoing maintenance.
-    *   `lead_capture_design.md`: Specifications for TypeForm and Amelia forms.
-    *   `lead_management_workflow.md`: Plan for processing leads.
-    *   `performance_optimization_plan.md`: Website speed optimization strategies.
-    *   `seo_strategy.md`: Search engine optimization plan.
-    *   `testing_strategy.md`: Website testing plan.
-    *   `traffic_analytics_plan.md`: Google Analytics 4 implementation plan.
+The codebase has been cleaned up and consolidated:
 
-## Migration to WordPress
+1. **CSS Consolidation**:
+   - Combined multiple CSS files (fixes.css, testimonials.css, portfolio.css, hero.css) into a single consolidated.css file
+   - Removed inline styles and moved them to the consolidated stylesheet
+   - Maintained the Wilmer theme styling
 
-Refer to the `docs/client_documentation.md` file for detailed instructions on migrating these static assets into a live WordPress environment using the Nexter Pro theme and Elementor Pro page builder on GoDaddy.
+2. **JavaScript Consolidation**:
+   - Combined main.js and scroll-fix.js into a single consolidated.js file
+   - Organized code with clear section comments
+   - Improved performance by removing duplicate functionality
 
-## Usage
+3. **HTML Cleanup**:
+   - Updated HTML to reference consolidated CSS and JS files
+   - Removed inline styles
+   - Improved accessibility with proper ARIA attributes
+   - Fixed duplicate sections and elements
 
-These files are intended as a starting point for a full WordPress development. The HTML and CSS can be used as a reference for building out pages in Elementor, and the content drafts can be copied into the respective pages.
+## Wilmer Theme
 
-## Contributing
+The website follows the Wilmer theme visual style:
+- White backgrounds for main content areas
+- Orange accents (#F47B20) for buttons, highlights, and call-to-action elements
+- Dark blue (#2D3B71) for headers, navigation, and primary text
+- Clean, modern aesthetic with appropriate spacing between sections
+- Consistent typography using Raleway (for headings) and Open Sans (for body text)
 
-This project was developed by Manus. For future development or modifications, please refer to the provided documentation.
+## Development
 
+To work on this project:
+
+1. Clone the repository
+2. Open the static_site directory in your preferred code editor
+3. Make changes to the consolidated files rather than creating new ones
+4. Test changes in a browser before committing
+
+## License
+
+All rights reserved - Top Notch Renovations & Home Services - 2025

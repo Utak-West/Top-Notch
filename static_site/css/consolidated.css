@@ -1,0 +1,427 @@
+/*
+ * Top Notch Renovations - Consolidated CSS
+ * This file combines all CSS styles from the static site into a single comprehensive stylesheet
+ *
+ * This consolidated stylesheet implements:
+ * 1. Light backgrounds (white/off-white) for main content areas
+ * 2. Orange accents (#F47B20) for buttons, highlights, and call-to-action elements
+ * 3. Dark blue (#2D3B71) for headers, navigation, and primary text
+ * 4. Clean, modern aesthetic with appropriate spacing between sections
+ * 5. Consistent typography using Raleway (for headings) and Open Sans (for body text)
+ */
+
+/* ===== ROOT VARIABLES ===== */
+:root {
+  /* Primary Colors */
+  --primary-color: #2D3B71; /* Dark Blue for headers, navigation, primary text */
+  --secondary-color: #F47B20; /* Orange for buttons, highlights, CTAs */
+  --accent-color: #e2e2e2;
+  --text-color: #111; /* Dark text */
+  --light-text: #666; /* Secondary text */
+  --white: #ffffff; /* White background */
+  --light-bg: #f8f8f8; /* Off-white background */
+  --dark-bg: #111; /* Dark background */
+  --border-color: #e0e0e0;
+
+  /* Spacing */
+  --section-spacing: 100px; /* Spacing between sections */
+  --item-spacing: 30px; /* Spacing between items */
+
+  /* Transitions */
+  --transition: all 0.3s ease;
+}
+
+/* ===== FIXES ===== */
+/* Fix scrolling issues */
+html, body {
+    height: auto !important;
+    overflow-y: auto !important;
+    position: relative !important;
+}
+
+body {
+    padding-top: 105px !important; /* Height of top bar + header */
+    margin: 0 !important;
+}
+
+/* Fix header positioning */
+.header-wrapper {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    display: block !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fix for icon spacing */
+.fa-tools, .fa-calendar, .fa-arrow-right {
+    margin-right: 8px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-image: url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1600&q=80');
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(45, 59, 113, 0.7) 0%, rgba(45, 59, 113, 0.85) 100%);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero .badge {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: rgba(244, 123, 32, 0.2);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.hero .badge i {
+    margin-right: 5px;
+    color: #F47B20;
+}
+
+/* ===== PORTFOLIO SECTION ===== */
+.portfolio-preview {
+    background-color: var(--light-bg);
+    padding: 60px 0;
+}
+
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.portfolio-filter {
+    padding: 8px 20px;
+    background-color: rgba(244, 123, 32, 0.1);
+    color: #222;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.portfolio-filter.active {
+    background-color: #F47B20;
+    color: white;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(45, 59, 113, 0.1) 0%, rgba(45, 59, 113, 0.9) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover .portfolio-content {
+    transform: translateY(0);
+}
+
+.portfolio-category {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.portfolio-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.portfolio-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center-margin {
+    margin-top: 60px;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonials {
+    background-color: #EBF3FF;
+    padding: 60px 0;
+}
+
+.testimonials h2 {
+    color: #222;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.testimonial-quote {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    color: #F47B20;
+    font-size: 60px;
+}
+
+.testimonial p {
+    color: #222;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2D3B71;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.author-name {
+    color: #222;
+    display: block;
+    font-weight: bold;
+}
+
+.author-location {
+    color: #555;
+}
+
+/* ===== SERVICE AREA ===== */
+.service-area {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.service-area h2 {
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-area p {
+    color: #222;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.map-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.map-overlay h3 {
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.map-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.map-overlay li {
+    padding: 5px 0;
+    color: #222;
+}
+
+.map-marker-icon {
+    color: #F47B20;
+    margin-right: 8px;
+}
+
+/* ===== CONTACT CTA ===== */
+.contact-cta {
+    background-color: #2D3B71;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+}
+
+.contact-cta h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact-cta p {
+    color: white;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== FOOTER ===== */
+.footer-widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: block;
+    height: 50px;
+    width: auto;
+}

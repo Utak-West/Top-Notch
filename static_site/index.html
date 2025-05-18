@@ -18,10 +18,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/wilmer-consolidated.css">
-    <link rel="stylesheet" href="css/fixes.css">
-    <link rel="stylesheet" href="css/testimonials.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/consolidated.css">
     <!-- Include Swiper CSS for sliders -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 
@@ -341,7 +338,7 @@
 
                 <div class="portfolio-items">
                     <!-- Kitchen Project -->
-                    <div class="portfolio-item animate-on-scroll" data-category="kitchen" style="flex: 0 0 calc(33.33% - 20px); max-width: 350px; position: relative; overflow: hidden;">
+                    <div class="portfolio-item animate-on-scroll" data-category="kitchen">
                         <img
                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 350'%3E%3C/svg%3E"
                             data-src="https://images.unsplash.com/photo-1556911220-bff31c812dba"
@@ -352,29 +349,29 @@
                             height="350"
                             style="width: 100%; height: 350px; object-fit: cover;"
                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1556912173-3bb406ef7e05'; this.alt='Modern kitchen with white cabinets'">
-                        <div class="portfolio-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: all 0.3s ease;">
-                            <div class="portfolio-content" style="text-align: center; color: white; padding: 20px; transform: translateY(20px); transition: transform 0.4s ease;">
-                                <span class="portfolio-category" style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block;">Kitchen</span>
-                                <h3 class="portfolio-title" style="font-size: 22px; margin-bottom: 15px; color: white;">Modern Kitchen Renovation</h3>
-                                <a href="portfolio.html#kitchen" class="btn" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary-color); color: white; text-decoration: none; font-size: 14px; border-radius: 4px;">View Project</a>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Kitchen</span>
+                                <h3 class="portfolio-title">Modern Kitchen Renovation</h3>
+                                <a href="portfolio.html#kitchen" class="btn">View Project</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Bathroom Project -->
-                    <div class="portfolio-item animate-on-scroll" data-category="bathroom" style="flex: 0 0 calc(33.33% - 20px); max-width: 350px; position: relative; overflow: hidden;">
+                    <div class="portfolio-item animate-on-scroll" data-category="bathroom">
                         <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a" alt="Luxury bathroom with walk-in shower and modern fixtures" class="portfolio-image" style="width: 100%; height: 350px; object-fit: cover;" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1552321554-5fefe8c9ef14'; this.alt='Modern bathroom with shower'">
-                        <div class="portfolio-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: all 0.3s ease;">
-                            <div class="portfolio-content" style="text-align: center; color: white; padding: 20px; transform: translateY(20px); transition: transform 0.4s ease;">
-                                <span class="portfolio-category" style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block;">Bathroom</span>
-                                <h3 class="portfolio-title" style="font-size: 22px; margin-bottom: 15px; color: white;">Luxury Bathroom Remodel</h3>
-                                <a href="portfolio.html#bathroom" class="btn" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary-color); color: white; text-decoration: none; font-size: 14px; border-radius: 4px;">View Project</a>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Bathroom</span>
+                                <h3 class="portfolio-title">Luxury Bathroom Remodel</h3>
+                                <a href="portfolio.html#bathroom" class="btn">View Project</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Electrical Project -->
-                    <div class="portfolio-item animate-on-scroll" data-category="electrical" style="flex: 0 0 calc(33.33% - 20px); max-width: 350px; position: relative; overflow: hidden;">
+                    <div class="portfolio-item animate-on-scroll" data-category="electrical">
                         <img
                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 350'%3E%3C/svg%3E"
                             data-src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4"
@@ -385,11 +382,11 @@
                             height="350"
                             style="width: 100%; height: 350px; object-fit: cover;"
                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1566627750347-58e3271155f5'; this.alt='Electrical wiring and panel installation'">
-                        <div class="portfolio-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: all 0.3s ease;">
-                            <div class="portfolio-content" style="text-align: center; color: white; padding: 20px; transform: translateY(20px); transition: transform 0.4s ease;">
-                                <span class="portfolio-category" style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block;">Electrical</span>
-                                <h3 class="portfolio-title" style="font-size: 22px; margin-bottom: 15px; color: white;">Panel & Lighting Upgrade</h3>
-                                <a href="portfolio.html#electrical" class="btn" style="display: inline-block; padding: 10px 20px; background-color: var(--secondary-color); color: white; text-decoration: none; font-size: 14px; border-radius: 4px;">View Project</a>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Electrical</span>
+                                <h3 class="portfolio-title">Panel & Lighting Upgrade</h3>
+                                <a href="portfolio.html#electrical" class="btn">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -441,9 +438,9 @@
                         allowfullscreen=""
                         title="Map showing Top Notch Renovations service areas in Linden, NJ and surrounding communities">
                     </iframe>
-                    <div class="map-overlay" style="position: absolute; top: 20px; right: 20px; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                        <h3 style="color: #222; margin-top: 0; margin-bottom: 10px; font-size: 16px;">Areas We Serve</h3>
-                        <ul style="list-style: none; padding: 0; margin: 0;">
+                    <div class="map-overlay">
+                        <h3>Areas We Serve</h3>
+                        <ul>
                             <li><i class="fas fa-map-marker-alt map-marker-icon"></i> Linden</li>
                             <li><i class="fas fa-map-marker-alt map-marker-icon"></i> Elizabeth</li>
                             <li><i class="fas fa-map-marker-alt map-marker-icon"></i> Cranford</li>
@@ -556,32 +553,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <!-- Lazy Loading Script -->
-    <script>
-        // Lazy loading implementation
-        const images = document.querySelectorAll('.lazy');
-        const config = {
-            rootMargin: '50px 0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    const dataSrc = img.getAttribute('data-src');
-                    if (dataSrc) {
-                        img.src = dataSrc;
-                        img.classList.remove('lazy');
-                        img.classList.add('loaded');
-                    }
-                    observer.unobserve(img);
-                }
-            });
-        }, config);
-
-        images.forEach(img => observer.observe(img));
-    </script>
+    <script src="js/consolidated.js"></script>
 </body>
 </html>
