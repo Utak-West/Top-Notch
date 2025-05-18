@@ -4,44 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Process - Top Notch Renovations & Home Services</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Enhancement CSS to handle missing images and improve responsiveness -->
-    <link rel="stylesheet" href="css/enhancements.css">
-    <!-- Add links to Google Fonts: Montserrat & Open Sans -->
+    <link rel="stylesheet" href="css/wilmer-theme.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style-fixes.css">
+    <link rel="stylesheet" href="css/client-fixes.css">
+    <!-- Include Swiper CSS for sliders -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html"><img src="images/top-notch-logo.svg" alt="Top Notch Renovations Logo" style="display: block; height: 50px; width: auto;"></a>
+    <!-- Header Wrapper - Contains both top bar and main header -->
+    <div class="header-wrapper">
+        <!-- Top Bar Section -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-left">
+                    <a href="tel:+19085551234" class="phone"><i class="fas fa-phone"></i> (908) 555-1234</a>
+                </div>
+                <div class="top-bar-right">
+                    <a href="contact.html" class="button">Get Your Free Quote</a>
+                </div>
             </div>
-            <nav class="main-navigation">
-                <ul>
+        </div>
+        
+        <!-- Main Header Section -->
+        <header class="site-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="index.html"><img src="images/top-notch-logo.svg" alt="Top Notch Renovations Logo"></a>
+                </div>
+                <nav class="main-navigation">
+                    <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="process.html">Our Process</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-contact">
-                <span class="phone"><i class="fas fa-phone"></i> (908) 555-1234</span>
-                <a href="contact.html" class="button">Get a Free Quote</a>
-            </div>
             <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
+    </div><!-- End header-wrapper -->
 
     <!-- Page Header -->
     <section class="page-header">

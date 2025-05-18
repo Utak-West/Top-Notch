@@ -3,22 +3,42 @@
  * Implements specific UI adjustments requested by the client
  */
 
-/* Header Wrapper - Fixed positioning with proper stacking */
+/* Position the header wrapper as a fixed container with proper stacking */
 .header-wrapper {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   right: 0 !important;
   width: 100% !important;
-  z-index: 1000 !important;
+  z-index: 9999 !important;
   display: block !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Fix for stacking order - ensure top bar is above header */
+/* CRITICAL SCROLLING FIX - DO NOT MODIFY */
+html {
+  height: auto !important;
+  overflow-y: scroll !important;
+}
+
 body {
+  height: auto !important;
+  min-height: 100vh !important;
+  position: static !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding-top: 105px !important;
+  margin: 0 !important;
   display: block !important;
-  padding-top: 105px !important; /* Allow space for the fixed header and top bar */
+}
+
+/* Disable any position:fixed that might be breaking scroll */
+.fixed-element:not(.header-wrapper):not(.top-bar):not(.site-header) {
+  position: absolute !important;
+}
+
+main {
+  flex: 1 0 auto !important;
 }
 
 /* ===== HEADER STYLING ===== */
@@ -28,11 +48,27 @@ body {
   width: 100% !important;
   padding: 15px 0 !important;
   position: absolute !important;
-  top: 40px !important; /* Position below top bar */
+  top: 36px !important;
   left: 0 !important;
   right: 0 !important;
-  z-index: 100 !important;
+  display: block !important;
+  z-index: 9900 !important; /* Below top bar */
   height: 65px !important;
+}
+
+/* For white background menus - ensure consistent structure */
+header:not(.site-header) {
+  background-color: white !important;
+  border-bottom: 1px solid #eaeaea !important;
+  width: 100% !important;
+  padding: 15px 0 !important;
+  height: 65px !important;
+  position: fixed !important;
+  top: 36px !important; /* Position below top bar */
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9400 !important; /* Below top bar */
+  pointer-events: auto !important; /* Re-enable clicks */
 }
 
 .site-header .container {
@@ -62,9 +98,25 @@ body {
 }
 
 /* Base body styling with padding for fixed header elements */
-body {
+html, body {
   margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100% !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+}
+
+body {
+  position: relative !important;
   padding-top: 110px !important; /* Combined height of top bar + header + extra space */
+  height: auto !important;
+}
+
+main, .main-content, #content, .page-container, .container {
+  position: relative !important;
+  z-index: 1 !important;
+  overflow: visible !important;
 }
 
 /* Top bar styling */
@@ -78,8 +130,9 @@ body {
   top: 0 !important;
   left: 0 !important;
   right: 0 !important;
-  z-index: 1001 !important;
   display: block !important;
+  z-index: 10000 !important; /* Higher than the header */
+  height: 36px !important;
 }
 
 .top-bar .container {
@@ -255,11 +308,18 @@ nav ul li a {
   letter-spacing: 0.5px !important;
   padding: 10px 15px !important;
   position: relative !important;
-  text-decoration: none !important;
+  text-decoration: none !important; /* Override general link styling for menu items */
   transition: color 0.3s ease !important;
   display: inline-block !important;
   visibility: visible !important;
   opacity: 1 !important;
+}
+
+/* Fix links to have single underline */
+a {
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 3px !important;
 }
 
 /* Active menu item - orange underline */
@@ -285,6 +345,9 @@ li.current-menu-item > a,
 header nav a:hover,
 nav a:hover {
   color: var(--secondary-color) !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 3px !important;
 }
 
 /* Active hover state */
@@ -440,7 +503,46 @@ h2.text-center:after {
   font-size: 24px;
 }
 
-/* Fix image display */
+/* ===== COMPREHENSIVE IMAGE STYLING FIXES ===== */
+
+/* Base image styling for all images */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  transition: transform 0.3s ease, opacity 0.3s ease !important;
+  opacity: 1 !important;
+}
+
+/* Fix for images using Unsplash or external URLs */
+[style*="unsplash.com"] {
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+/* Fallback styling for missing images */
+.service-category-image:empty,
+.portfolio-item:empty,
+.team-member:empty,
+.testimonial-avatar:empty {
+  min-height: 200px !important;
+  background-color: rgba(45, 59, 113, 0.05) !important;
+  border-radius: 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Handle image loading and errors with appropriate fallbacks */
+img[src=""], 
+img:not([src]),
+img[src="undefined"] {
+  opacity: 0 !important;
+  min-height: 200px !important;
+  background-color: rgba(45, 59, 113, 0.05) !important;
+}
+
+/* Fix image display in about section */
 .about-image img {
   display: block !important;
   width: 100% !important;
@@ -448,6 +550,96 @@ h2.text-center:after {
   border-radius: 8px !important;
   overflow: hidden !important;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+  object-fit: cover !important;
+  aspect-ratio: 4/3 !important;
+}
+
+/* Service category images */
+.service-category-image {
+  position: relative !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  height: 240px !important;
+  display: block !important;
+}
+
+.service-category-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.5s ease !important;
+  display: block !important;
+}
+
+.service-category-image:hover img {
+  transform: scale(1.05) !important;
+}
+
+/* Portfolio images */
+.portfolio-item img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  aspect-ratio: 16/9 !important;
+  transition: transform 0.5s ease !important;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05) !important;
+}
+
+/* Team member images */
+.team-member img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 8px !important;
+  aspect-ratio: 1/1 !important;
+  object-fit: cover !important;
+}
+
+/* Hero and background images */
+.hero-background,
+.page-header .hero-background {
+  background-size: cover !important;
+  background-position: center center !important;
+  transition: transform 10s ease !important;
+}
+
+/* Testimonial images */
+.testimonial-avatar img {
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 3px solid white !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Logo images */
+.site-logo img {
+  height: 40px !important;
+  width: auto !important;
+  display: block !important;
+  transition: opacity 0.3s ease !important;
+}
+
+/* Footer logo image */
+.footer-logo img {
+  height: 40px !important;
+  width: auto !important;
+  display: block !important;
+  margin-bottom: 20px !important;
+}
+
+/* Fix image loading with fallbacks */
+img[onerror] {
+  font-family: 'Open Sans', sans-serif !important;
+  color: var(--text-color) !important;
+  font-size: 14px !important;
+  text-align: center !important;
+  padding: 20px !important;
+  background-color: rgba(45, 59, 113, 0.05) !important;
+  border-radius: 4px !important;
 }
 
 /* Align section items vertically and horizontally */

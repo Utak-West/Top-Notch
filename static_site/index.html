@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style-fixes.css">
     <link rel="stylesheet" href="css/client-fixes.css">
+    <link rel="stylesheet" href="css/scrolling-fix.css">
     <!-- Include Swiper CSS for sliders -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     
@@ -23,6 +24,28 @@
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Direct scrolling fixes - high priority -->
+    <style>
+        html, body {
+            height: auto !important;
+            overflow-y: auto !important;
+            position: relative !important;
+        }
+        body {
+            padding-top: 105px !important;
+            margin: 0 !important;
+        }
+        .header-wrapper {
+            position: fixed !important;
+            top: 0 !important;
+            width: 100% !important;
+            z-index: 9999 !important;
+        }
+        section, main, .container {
+            overflow: visible !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Wrapper - Contains both top bar and main header -->

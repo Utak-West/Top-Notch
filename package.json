@@ -1,0 +1,26 @@
+{
+  "name": "top-notch",
+  "version": "1.0.0",
+  "description": "This repository contains the static website assets for Top Notch Renovations & Home Services. It was developed as a foundational static build (HTML, CSS, JavaScript) along with comprehensive content drafts and strategic documentation. This package is intended to be migrated into a WordPress environment using the Nexter Pro theme and Elementor Pro page builder, hosted on GoDaddy or a similar platform.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Utak-West/Top-Notch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Utak-West/Top-Notch/issues"
+  },
+  "homepage": "https://github.com/Utak-West/Top-Notch#readme",
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}
