@@ -1,0 +1,134 @@
+/*
+ * Top Notch Renovations - Improvements CSS
+ * This file adds targeted improvements to address specific styling and accessibility issues
+ */
+
+/* ===== ICON ALIGNMENT FIXES ===== */
+/* Ensure proper centering of icons within circular backgrounds */
+.icon-circle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.icon-circle i {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+}
+
+/* Process icons specific fixes */
+.process-step .icon-circle {
+  background-color: rgba(244, 123, 32, 0.1);
+  color: #F47B20;
+}
+
+/* ===== LOGO STYLING FIXES ===== */
+/* Ensure consistent logo dimensions and alignment */
+.logo-container {
+  display: flex !important;
+  align-items: center !important;
+  height: 100%;
+}
+
+.site-logo img {
+  height: 40px !important;
+  width: auto !important;
+  vertical-align: middle !important;
+}
+
+/* Logo fallback styling */
+.site-logo img[src=""], 
+.site-logo img:not([src]) {
+  display: none !important;
+}
+
+.site-logo:has(img[src=""]) .logo-text,
+.site-logo:has(img:not([src])) .logo-text {
+  margin-left: 0 !important;
+}
+
+/* ===== PORTFOLIO LAYOUT FIXES ===== */
+/* Use flex layout for portfolio items instead of grid */
+.portfolio-items {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 30px !important;
+  justify-content: center !important;
+}
+
+.portfolio-item {
+  flex: 0 0 calc(33.33% - 20px) !important;
+  max-width: 350px !important;
+  margin: 0 !important;
+}
+
+/* Ensure portfolio item spacing is consistent */
+@media (max-width: 992px) {
+  .portfolio-item {
+    flex: 0 0 calc(50% - 15px) !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-item {
+    flex: 0 0 100% !important;
+  }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+/* Ensure text on dark backgrounds is white for accessibility */
+.dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg h5, .dark-bg h6,
+.dark-bg p, .dark-bg span, .dark-bg a:not(.btn), .dark-bg li {
+  color: #ffffff !important;
+}
+
+.footer-widgets h1, .footer-widgets h2, .footer-widgets h3, 
+.footer-widgets h4, .footer-widgets h5, .footer-widgets h6,
+.footer-widgets p, .footer-widgets span, .footer-widgets li {
+  color: #ffffff !important;
+}
+
+.page-header h1, .page-header h2, .page-header .breadcrumbs,
+.page-header p, .page-header span {
+  color: #ffffff !important;
+}
+
+.primary-bg h1, .primary-bg h2, .primary-bg h3,
+.primary-bg h4, .primary-bg h5, .primary-bg h6,
+.primary-bg p, .primary-bg span, .primary-bg li {
+  color: #ffffff !important;
+}
+
+.cta-section h1, .cta-section h2, .cta-section h3,
+.cta-section h4, .cta-section h5, .cta-section h6,
+.cta-section p, .cta-section span {
+  color: #ffffff !important;
+}
+
+/* ===== SERVICE CARDS SPACING ===== */
+/* Ensure consistent spacing between service cards */
+.service-card {
+  margin-bottom: 30px !important;
+  height: calc(100% - 30px) !important;
+}
+
+.service-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin: 0 -15px !important;
+}
+
+.service-grid-item {
+  padding: 15px !important;
+}
+
+/* ===== PERFORMANCE IMPROVEMENTS ===== */
+/* Add image lazy loading attributes via JavaScript */
