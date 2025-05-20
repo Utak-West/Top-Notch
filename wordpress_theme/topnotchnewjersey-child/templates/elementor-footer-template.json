@@ -1,0 +1,702 @@
+{
+  "version": "0.4",
+  "title": "Top Notch Footer",
+  "type": "footer",
+  "content": [
+    {
+      "id": "main-footer",
+      "elType": "section",
+      "settings": {
+        "background_color": "#2D3B71",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "0",
+          "bottom": "60",
+          "left": "0",
+          "isLinked": false
+        },
+        "structure": "40"
+      },
+      "elements": [
+        {
+          "id": "footer-column-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "20",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "footer-logo",
+              "elType": "widget",
+              "settings": {
+                "image": {
+                  "url": "{{site_url}}/wp-content/uploads/2023/05/top-notch-logo-white.svg",
+                  "id": 124,
+                  "alt": "Top Notch Home Improvement Logo"
+                },
+                "image_size": "medium",
+                "width": {
+                  "unit": "px",
+                  "size": 180,
+                  "sizes": []
+                },
+                "align": "left",
+                "link_to": "home",
+                "caption_source": "none",
+                "open_lightbox": "no"
+              },
+              "widgetType": "image"
+            },
+            {
+              "id": "footer-about-text",
+              "elType": "widget",
+              "settings": {
+                "editor": "Top Notch Home Improvement is New Jersey's trusted partner for complete home renovations, kitchens, bathrooms, and more. Licensed, bonded, and insured for your peace of mind.",
+                "text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Open Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "footer-column-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "10",
+              "bottom": "0",
+              "left": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "footer-services-heading",
+              "elType": "widget",
+              "settings": {
+                "title": "Our Services",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "footer-services-links",
+              "elType": "widget",
+              "settings": {
+                "icon_list": [
+                  {
+                    "text": "Kitchen Renovations",
+                    "selected_icon": {
+                      "value": "fas fa-angle-right",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "/services#kitchen",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "service-1"
+                  },
+                  {
+                    "text": "Bathroom Remodeling",
+                    "selected_icon": {
+                      "value": "fas fa-angle-right",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "/services#bathroom",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "service-2"
+                  },
+                  {
+                    "text": "Full Home Renovations",
+                    "selected_icon": {
+                      "value": "fas fa-angle-right",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "/services#full-home",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "service-3"
+                  },
+                  {
+                    "text": "Electrical Services",
+                    "selected_icon": {
+                      "value": "fas fa-angle-right",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "/services#electrical",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "service-4"
+                  },
+                  {
+                    "text": "Home Improvements",
+                    "selected_icon": {
+                      "value": "fas fa-angle-right",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "/services#improvements",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "service-5"
+                  }
+                ],
+                "space_between": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                },
+                "icon_color": "#F47B20",
+                "text_color": "#FFFFFF",
+                "text_color_hover": "#F47B20",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "text_indent": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                },
+                "icon_typography_typography": "custom",
+                "icon_typography_font_family": "Open Sans",
+                "icon_typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "icon_typography_font_weight": "400",
+                "icon_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                }
+              },
+              "widgetType": "icon-list"
+            }
+          ]
+        },
+        {
+          "id": "footer-column-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "10",
+              "bottom": "0",
+              "left": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "footer-quick-links-heading",
+              "elType": "widget",
+              "settings": {
+                "title": "Quick Links",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "footer-quick-links",
+              "elType": "widget",
+              "settings": {
+                "icon_list": [
+                  {
+                    "text": "About Us",
+                    "selected_icon": {
+                      "value": "fas fa-angle-right",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "/about",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "link-1"
+                  },
+                  {
+                    "text": "Our Portfolio",
+                    "selected_icon": {
+                      "value": "fas fa-angle-right",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "/portfolio",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "link-2"
+                  },
+                  {
+                    "text": "Our Process",
+                    "selected_icon": {
+                      "value": "fas fa-angle-right",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "/process",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "link-3"
+                  },
+                  {
+                    "text": "Testimonials",
+                    "selected_icon": {
+                      "value": "fas fa-angle-right",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "/testimonials",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "link-4"
+                  },
+                  {
+                    "text": "Contact Us",
+                    "selected_icon": {
+                      "value": "fas fa-angle-right",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "/contact",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "link-5"
+                  }
+                ],
+                "space_between": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                },
+                "icon_color": "#F47B20",
+                "text_color": "#FFFFFF",
+                "text_color_hover": "#F47B20",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "text_indent": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                },
+                "icon_typography_typography": "custom",
+                "icon_typography_font_family": "Open Sans",
+                "icon_typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "icon_typography_font_weight": "400",
+                "icon_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                }
+              },
+              "widgetType": "icon-list"
+            }
+          ]
+        },
+        {
+          "id": "footer-column-4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "20",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "footer-contact-heading",
+              "elType": "widget",
+              "settings": {
+                "title": "Contact Us",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "footer-contact-info",
+              "elType": "widget",
+              "settings": {
+                "icon_list": [
+                  {
+                    "text": "Linden, NJ",
+                    "selected_icon": {
+                      "value": "fas fa-map-marker-alt",
+                      "library": "fa-solid"
+                    },
+                    "_id": "contact-1"
+                  },
+                  {
+                    "text": "(908) 555-1234",
+                    "selected_icon": {
+                      "value": "fas fa-phone",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "tel:+19085551234",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "contact-2"
+                  },
+                  {
+                    "text": "info@topnotchnj.com",
+                    "selected_icon": {
+                      "value": "fas fa-envelope",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "mailto:info@topnotchnj.com",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "contact-3"
+                  },
+                  {
+                    "text": "Mon-Fri: 8am-6pm",
+                    "selected_icon": {
+                      "value": "far fa-clock",
+                      "library": "fa-regular"
+                    },
+                    "_id": "contact-4"
+                  }
+                ],
+                "space_between": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "icon_color": "#F47B20",
+                "text_color": "#FFFFFF",
+                "text_color_hover": "#F47B20",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "text_indent": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "icon_typography_typography": "custom",
+                "icon_typography_font_family": "Open Sans",
+                "icon_typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "icon_typography_font_weight": "400",
+                "icon_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "widgetType": "icon-list"
+            },
+            {
+              "id": "footer-social-heading",
+              "elType": "widget",
+              "settings": {
+                "title": "Follow Us",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "15",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "footer-social-icons",
+              "elType": "widget",
+              "settings": {
+                "social_icon_list": [
+                  {
+                    "social_icon": {
+                      "value": "fab fa-facebook-f",
+                      "library": "fa-brands"
+                    },
+                    "link": {
+                      "url": "https://facebook.com/",
+                      "is_external": "true",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "social-1"
+                  },
+                  {
+                    "social_icon": {
+                      "value": "fab fa-instagram",
+                      "library": "fa-brands"
+                    },
+                    "link": {
+                      "url": "https://instagram.com/",
+                      "is_external": "true",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "social-2"
+                  },
+                  {
+                    "social_icon": {
+                      "value": "fab fa-pinterest-p",
+                      "library": "fa-brands"
+                    },
+                    "link": {
+                      "url": "https://pinterest.com/",
+                      "is_external": "true",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "social-3"
+                  },
+                  {
+                    "social_icon": {
+                      "value": "fab fa-houzz",
+                      "library": "fa-brands"
+                    },
+                    "link": {
+                      "url": "https://houzz.com/",
+                      "is_external": "true",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_id": "social-4"
+                  }
+                ],
+                "shape": "rounded",
+                "align": "left",
+                "icon_color": "custom",
+                "icon_primary_color": "#FFFFFF",
+                "icon_secondary_color": "#F47B20",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "icon_spacing": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "hover_animation": "grow"
+              },
+              "widgetType": "social-icons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "copyright-footer",
+      "elType": "section",
+      "settings": {
+        "background_color": "#1F2A54",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "0",
+          "bottom": "20",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "copyright-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null,
+            "content_position": "center"
+          },
+          "elements": [
+            {
+              "id": "copyright-text",
+              "elType": "widget",
+              "settings": {
+                "editor": "© 2025 Top Notch Home Improvement. All Rights Reserved. | <a href=\"/privacy-policy\" style=\"color: #FFFFFF;\">Privacy Policy</a> | <a href=\"/terms-of-service\" style=\"color: #FFFFFF;\">Terms of Service</a>",
+                "text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Open Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "center"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "background_background": "classic",
+    "background_color": "#ffffff"
+  },
+  "status": "publish"
+}

@@ -1,0 +1,482 @@
+{
+  "version": "0.4",
+  "title": "Top Notch Value Proposition",
+  "type": "section",
+  "content": [
+    {
+      "id": "value-proposition-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F5F5F5",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "60",
+          "left": "20",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "40",
+          "right": "15",
+          "bottom": "40",
+          "left": "15",
+          "isLinked": false
+        },
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "value-proposition-column-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "30",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "0",
+              "right": "15",
+              "bottom": "30",
+              "left": "0",
+              "isLinked": false
+            },
+            "content_position": "center"
+          },
+          "elements": [
+            {
+              "id": "value-proposition-image",
+              "elType": "widget",
+              "settings": {
+                "image": {
+                  "url": "{{site_url}}/wp-content/uploads/2023/05/renovation-team.jpg",
+                  "id": 126,
+                  "alt": "Top Notch Home Improvement team working on a renovation project"
+                },
+                "image_size": "large",
+                "width": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "align": "center",
+                "hover_animation": "zoom-in",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "isLinked": true
+                },
+                "_animation": "fadeIn"
+              },
+              "widgetType": "image"
+            }
+          ]
+        },
+        {
+          "id": "value-proposition-column-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "30",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "15",
+              "isLinked": false
+            },
+            "content_position": "center"
+          },
+          "elements": [
+            {
+              "id": "value-proposition-subtitle",
+              "elType": "widget",
+              "settings": {
+                "title": "WHY CHOOSE TOP NOTCH",
+                "header_size": "h6",
+                "align": "left",
+                "title_color": "#F47B20",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "10",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_animation": "fadeIn",
+                "_animation_delay": 200
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "value-proposition-title",
+              "elType": "widget",
+              "settings": {
+                "title": "New Jersey's Premier Home Renovation Experts",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#2D3B71",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_animation": "fadeIn",
+                "_animation_delay": 400
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "value-proposition-description",
+              "elType": "widget",
+              "settings": {
+                "editor": "Top Notch Home Improvement stands apart as the trusted choice for discerning New Jersey homeowners. Founded by Pedro Ribeiro, a licensed Master Electrician with extensive general contracting experience, we offer a unique advantage: seamless integration of expert electrical work with high-quality home renovations under one roof.",
+                "align": "left",
+                "text_color": "#333333",
+                "typography_typography": "custom",
+                "typography_font_family": "Open Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "30",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_animation": "fadeIn",
+                "_animation_delay": 600
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "value-proposition-features",
+              "elType": "section",
+              "settings": {
+                "structure": "20",
+                "margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": 0,
+                  "bottom": "30",
+                  "left": 0,
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "value-proposition-features-column-1",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": null,
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "10",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "_animation": "fadeInLeft",
+                    "_animation_delay": 800
+                  },
+                  "elements": [
+                    {
+                      "id": "feature-1",
+                      "elType": "widget",
+                      "settings": {
+                        "icon_list": [
+                          {
+                            "text": "Licensed, Bonded & Insured",
+                            "selected_icon": {
+                              "value": "fas fa-check-circle",
+                              "library": "fa-solid"
+                            },
+                            "_id": "feature-1-1"
+                          },
+                          {
+                            "text": "Integrated Expertise",
+                            "selected_icon": {
+                              "value": "fas fa-check-circle",
+                              "library": "fa-solid"
+                            },
+                            "_id": "feature-1-2"
+                          },
+                          {
+                            "text": "Quality Craftsmanship",
+                            "selected_icon": {
+                              "value": "fas fa-check-circle",
+                              "library": "fa-solid"
+                            },
+                            "_id": "feature-1-3"
+                          }
+                        ],
+                        "space_between": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "icon_color": "#F47B20",
+                        "text_color": "#333333",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "text_indent": {
+                          "unit": "px",
+                          "size": 12,
+                          "sizes": []
+                        },
+                        "icon_typography_typography": "custom",
+                        "icon_typography_font_family": "Open Sans",
+                        "icon_typography_font_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "icon_typography_font_weight": "500",
+                        "icon_typography_line_height": {
+                          "unit": "em",
+                          "size": 1.6,
+                          "sizes": []
+                        }
+                      },
+                      "widgetType": "icon-list"
+                    }
+                  ]
+                },
+                {
+                  "id": "value-proposition-features-column-2",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": null,
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "10",
+                      "isLinked": false
+                    },
+                    "_animation": "fadeInRight",
+                    "_animation_delay": 1000
+                  },
+                  "elements": [
+                    {
+                      "id": "feature-2",
+                      "elType": "widget",
+                      "settings": {
+                        "icon_list": [
+                          {
+                            "text": "Transparent Pricing",
+                            "selected_icon": {
+                              "value": "fas fa-check-circle",
+                              "library": "fa-solid"
+                            },
+                            "_id": "feature-2-1"
+                          },
+                          {
+                            "text": "On-Time Completion",
+                            "selected_icon": {
+                              "value": "fas fa-check-circle",
+                              "library": "fa-solid"
+                            },
+                            "_id": "feature-2-2"
+                          },
+                          {
+                            "text": "Satisfaction Guaranteed",
+                            "selected_icon": {
+                              "value": "fas fa-check-circle",
+                              "library": "fa-solid"
+                            },
+                            "_id": "feature-2-3"
+                          }
+                        ],
+                        "space_between": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "icon_color": "#F47B20",
+                        "text_color": "#333333",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "text_indent": {
+                          "unit": "px",
+                          "size": 12,
+                          "sizes": []
+                        },
+                        "icon_typography_typography": "custom",
+                        "icon_typography_font_family": "Open Sans",
+                        "icon_typography_font_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "icon_typography_font_weight": "500",
+                        "icon_typography_line_height": {
+                          "unit": "em",
+                          "size": 1.6,
+                          "sizes": []
+                        }
+                      },
+                      "widgetType": "icon-list"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "value-proposition-cta",
+              "elType": "widget",
+              "settings": {
+                "button_text": "Learn More About Us",
+                "align": "left",
+                "size": "lg",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1,
+                  "sizes": []
+                },
+                "button_text_color": "#FFFFFF",
+                "background_color": "#F47B20",
+                "hover_color": "#FFFFFF",
+                "button_background_hover_color": "#2D3B71",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "30",
+                  "bottom": "15",
+                  "left": "30",
+                  "isLinked": false
+                },
+                "link": {
+                  "url": "/about",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "selected_icon": {
+                  "value": "fas fa-arrow-right",
+                  "library": "fa-solid"
+                },
+                "icon_align": "right",
+                "icon_indent": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                },
+                "_animation": "fadeIn",
+                "_animation_delay": 1200
+              },
+              "widgetType": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

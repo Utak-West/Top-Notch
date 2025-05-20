@@ -1,0 +1,406 @@
+{
+  "version": "0.4",
+  "title": "Top Notch Home Hero",
+  "type": "section",
+  "content": [
+    {
+      "id": "hero-section",
+      "elType": "section",
+      "settings": {
+        "height": "min-height",
+        "custom_height": {
+          "unit": "px",
+          "size": 600,
+          "sizes": []
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "{{site_url}}/wp-content/uploads/2023/05/home-renovation-hero.jpg",
+          "id": 125,
+          "alt": "Modern kitchen renovation by Top Notch Home Improvement"
+        },
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "#2D3B71",
+        "background_overlay_opacity": {
+          "unit": "px",
+          "size": 0.7,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "0",
+          "bottom": "100",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "60",
+          "right": "15",
+          "bottom": "60",
+          "left": "15",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "hero-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null,
+            "content_position": "middle",
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "hero-badge",
+              "elType": "widget",
+              "settings": {
+                "title": "Licensed, Bonded & Insured",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "20",
+                  "bottom": "8",
+                  "left": "20",
+                  "isLinked": false
+                },
+                "selected_icon": {
+                  "value": "fas fa-shield-alt",
+                  "library": "fa-solid"
+                },
+                "icon_color": "#F47B20",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "icon_spacing": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                },
+                "_background_background": "classic",
+                "_background_color": "rgba(244, 123, 32, 0.2)",
+                "_border_radius": {
+                  "unit": "px",
+                  "top": "30",
+                  "right": "30",
+                  "bottom": "30",
+                  "left": "30",
+                  "isLinked": true
+                },
+                "_animation": "fadeIn",
+                "_animation_delay": 300
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "hero-title",
+              "elType": "widget",
+              "settings": {
+                "title": "Transform Your Home with New Jersey's Premier Renovation Experts",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 36,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_animation": "fadeIn",
+                "_animation_delay": 500,
+                "align_tablet": "center",
+                "align_mobile": "center",
+                "_element_width": "initial",
+                "_element_width_tablet": "initial",
+                "_element_custom_width": {
+                  "unit": "%",
+                  "size": 80,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 90,
+                  "sizes": []
+                }
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "hero-subtitle",
+              "elType": "widget",
+              "settings": {
+                "editor": "From stunning kitchen remodels and luxurious bathroom renovations to complete home transformations, Top Notch delivers exceptional craftsmanship, integrated expertise, and personalized service for homeowners throughout New Jersey.",
+                "align": "center",
+                "text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Open Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "30",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_animation": "fadeIn",
+                "_animation_delay": 700,
+                "_element_width": "initial",
+                "_element_width_tablet": "initial",
+                "_element_custom_width": {
+                  "unit": "%",
+                  "size": 70,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 90,
+                  "sizes": []
+                }
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "hero-buttons",
+              "elType": "widget",
+              "settings": {
+                "button_text": "Get a Free Consultation",
+                "button_align": "center",
+                "size": "lg",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1,
+                  "sizes": []
+                },
+                "button_text_color": "#FFFFFF",
+                "background_color": "#F47B20",
+                "hover_color": "#FFFFFF",
+                "button_background_hover_color": "#E06A19",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "30",
+                  "bottom": "15",
+                  "left": "30",
+                  "isLinked": false
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "10",
+                  "bottom": "0",
+                  "left": "10",
+                  "isLinked": false
+                },
+                "link": {
+                  "url": "/contact",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "selected_icon": {
+                  "value": "fas fa-calendar-alt",
+                  "library": "fa-solid"
+                },
+                "icon_align": "right",
+                "icon_indent": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                },
+                "_animation": "fadeIn",
+                "_animation_delay": 900
+              },
+              "widgetType": "button"
+            },
+            {
+              "id": "hero-secondary-button",
+              "elType": "widget",
+              "settings": {
+                "button_text": "View Our Portfolio",
+                "button_align": "center",
+                "size": "lg",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1,
+                  "sizes": []
+                },
+                "button_text_color": "#FFFFFF",
+                "background_color": "transparent",
+                "hover_color": "#FFFFFF",
+                "button_background_hover_color": "#2D3B71",
+                "button_border_border": "solid",
+                "button_border_width": {
+                  "unit": "px",
+                  "top": "2",
+                  "right": "2",
+                  "bottom": "2",
+                  "left": "2",
+                  "isLinked": true
+                },
+                "button_border_color": "#FFFFFF",
+                "button_border_hover_color": "#2D3B71",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "30",
+                  "bottom": "15",
+                  "left": "30",
+                  "isLinked": false
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "10",
+                  "bottom": "0",
+                  "left": "10",
+                  "isLinked": false
+                },
+                "link": {
+                  "url": "/portfolio",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "selected_icon": {
+                  "value": "fas fa-images",
+                  "library": "fa-solid"
+                },
+                "icon_align": "right",
+                "icon_indent": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                },
+                "_animation": "fadeIn",
+                "_animation_delay": 1100
+              },
+              "widgetType": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
