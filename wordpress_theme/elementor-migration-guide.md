@@ -1,6 +1,6 @@
 # Elementor Pro, Nexter Pro, and PosyMyths Integration Guide
 
-This guide provides specific instructions for migrating the Top Notch Renovations static site to WordPress using Elementor Pro, Nexter Pro theme, and PosyMyths products including Amelia booking.
+This guide provides specific instructions for migrating the Top Notch Renovations static site to WordPress using Elementor Pro, Nexter Pro theme, and PosyMyths products including Amelia booking. The design has been updated to align with the Wilmer theme inspiration ([wilmer.qodeinteractive.com](https://wilmer.qodeinteractive.com/)) while maintaining our specific styling requirements.
 
 ## Table of Contents
 1. [Setup and Installation](#setup-and-installation)
@@ -59,6 +59,7 @@ This guide provides specific instructions for migrating the Top Notch Renovation
    - Use Nexter Pro Theme Builder to create custom header
    - Logo dimensions: exactly 40px height, auto width
    - Add the following custom CSS to header section:
+
    ```css
    .logo-container {
      display: flex !important;
@@ -84,6 +85,7 @@ This guide provides specific instructions for migrating the Top Notch Renovation
    }
    ```
 
+
 2. **Header Navigation**:
    - Create main menu in WordPress Admin → Appearance → Menus
    - Style menu items with primary color: `#2D3B71`
@@ -99,6 +101,7 @@ This guide provides specific instructions for migrating the Top Notch Renovation
 2. **Portfolio Grid Implementation**:
    - Create a template for portfolio archive page
    - Instead of using Elementor's default portfolio widget (which uses grid), create a custom portfolio layout:
+
    ```html
    <div class="portfolio-items">
      [LOOP START]
@@ -109,8 +112,10 @@ This guide provides specific instructions for migrating the Top Notch Renovation
    </div>
    ```
 
+
 3. **Portfolio Item Styling**:
    - Add the following class overrides in Theme Options or Elementor's custom CSS:
+
    ```css
    .portfolio-items {
      display: flex !important;
@@ -138,6 +143,7 @@ This guide provides specific instructions for migrating the Top Notch Renovation
    }
    ```
 
+
 ## Service Cards Styling
 
 1. **Service Card Implementation**:
@@ -146,6 +152,7 @@ This guide provides specific instructions for migrating the Top Notch Renovation
    - Use Elementor's Column Gap feature to control spacing
 
 2. **Service Card Custom CSS**:
+
    ```css
    .service-card {
      margin-bottom: 30px !important;
@@ -163,6 +170,7 @@ This guide provides specific instructions for migrating the Top Notch Renovation
    }
    ```
 
+
 ## Process Icons Implementation
 
 1. **Process Step Creation**:
@@ -177,6 +185,7 @@ This guide provides specific instructions for migrating the Top Notch Renovation
      - Background size: 80px
 
 2. **Icon Alignment CSS**:
+
    ```css
    .icon-circle {
      display: flex !important;
@@ -203,7 +212,9 @@ This guide provides specific instructions for migrating the Top Notch Renovation
    }
    ```
 
+
 ## Amelia Booking Integration
+
 
 1. **Setup and Configuration**:
    - Install and activate Amelia Booking plugin
@@ -212,6 +223,7 @@ This guide provides specific instructions for migrating the Top Notch Renovation
 
 2. **Styling Booking Forms**:
    - Create a custom CSS file or add to theme CSS:
+
    ```css
    /* Amelia booking forms styling */
    .am-service-details {
@@ -234,6 +246,7 @@ This guide provides specific instructions for migrating the Top Notch Renovation
      color: #2D3B71 !important;
    }
    ```
+
 
 3. **Booking Page Template**:
    - Create a dedicated page template for booking
@@ -274,33 +287,51 @@ This guide provides specific instructions for migrating the Top Notch Renovation
 ## Testing Checklist
 
 1. **Visual Consistency Testing**:
-   - [ ] Verify icon alignment in circular backgrounds
-   - [ ] Check logo dimensions and alignment in header/footer
-   - [ ] Confirm portfolio displays with flex layout, not grid
-   - [ ] Validate text color on dark backgrounds is white
-   - [ ] Test fallback styling for missing images
+   
+- [ ] Verify icon alignment in circular backgrounds
+   
+- [ ] Check logo dimensions and alignment in header/footer
+   
+- [ ] Confirm portfolio displays with flex layout, not grid
+   
+- [ ] Validate text color on dark backgrounds is white
+   
+- [ ] Test fallback styling for missing images
 
 2. **Responsive Testing**:
-   - [ ] Desktop (1920px, 1440px, 1366px)
-   - [ ] Tablet (1024px, 768px)
-   - [ ] Mobile (414px, 375px)
+   
+- [ ] Desktop (1920px, 1440px, 1366px)
+   
+- [ ] Tablet (1024px, 768px)
+   
+- [ ] Mobile (414px, 375px)
 
 3. **Plugin Compatibility Testing**:
-   - [ ] Elementor Pro
-   - [ ] Nexter Pro theme
-   - [ ] Amelia booking
-   - [ ] Other PosyMyths products
+   
+- [ ] Elementor Pro
+   
+- [ ] Nexter Pro theme
+   
+- [ ] Amelia booking
+   
+- [ ] Other PosyMyths products
 
 4. **Performance Validation**:
-   - [ ] Google PageSpeed Insights
-   - [ ] GTmetrix performance testing
-   - [ ] WordPress health check
+   
+- [ ] Google PageSpeed Insights
+   
+- [ ] GTmetrix performance testing
+   
+- [ ] WordPress health check
 
 ---
 
 ## Additional Resources
 
 For more information on specific implementation details, refer to:
+
 - [Elementor Pro Documentation](https://elementor.com/help/pro/)
+
 - [Nexter Pro Theme Documentation](https://codex-themes.com/thegem/documentation/)
+
 - [Amelia Booking Documentation](https://wpamelia.com/documentation/)

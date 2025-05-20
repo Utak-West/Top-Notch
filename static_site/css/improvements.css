@@ -1,6 +1,7 @@
 /*
  * Top Notch Renovations - Improvements CSS
- * This file adds targeted improvements to address specific styling and accessibility issues
+ * This file adds targeted improvements inspired by Wilmer theme (https://wilmer.qodeinteractive.com/)
+ * while addressing specific styling and accessibility requirements
  */
 
 /* ===== ICON ALIGNMENT FIXES ===== */
@@ -132,3 +133,328 @@
 
 /* ===== PERFORMANCE IMPROVEMENTS ===== */
 /* Add image lazy loading attributes via JavaScript */
+
+/* ===== WILMER-INSPIRED IMPROVEMENTS ===== */
+
+/* Clean, modern section styling with proper spacing */
+.section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-small {
+  padding: 70px 0;
+}
+
+/* Modern heading styles with decorative elements */
+.section-title {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.section-title h2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 50px;
+  height: 2px;
+  background-color: #F47B20;
+}
+
+.section-title .subtitle {
+  font-size: 16px;
+  color: #777;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Clean, modern button styling */
+.btn-primary, .btn-secondary {
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.btn-primary {
+  background-color: #F47B20;
+  color: #fff;
+  border: 2px solid #F47B20;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #2D3B71;
+  border: 2px solid #2D3B71;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #F47B20;
+}
+
+.btn-secondary:hover {
+  background-color: #2D3B71;
+  color: #fff;
+}
+
+/* Modern service card styling */
+.service-card {
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #F47B20;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.service-card:hover:before {
+  transform: scaleY(1);
+}
+
+.service-card .service-icon {
+  font-size: 50px;
+  color: #F47B20;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: rotateY(180deg);
+}
+
+.service-card .service-title {
+  color: #2D3B71;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-title {
+  color: #F47B20;
+}
+
+/* Modern testimonial styling */
+.testimonial-card {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin-top: 50px;
+}
+
+.testimonial-card .testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: -80px auto 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-card .testimonial-rating {
+  color: #F47B20;
+  margin-bottom: 15px;
+}
+
+.testimonial-card .testimonial-content {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-card .testimonial-author {
+  font-weight: 600;
+  color: #2D3B71;
+}
+
+/* Modern portfolio items - maintaining flex layout requirement */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  transition: all 0.4s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(45, 59, 113, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-item img {
+  transition: all 0.8s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-overlay .portfolio-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease 0.1s;
+}
+
+.portfolio-overlay .portfolio-category {
+  color: #F47B20;
+  font-size: 14px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease 0.2s;
+}
+
+.portfolio-item:hover .portfolio-title,
+.portfolio-item:hover .portfolio-category {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Modern contact form styling */
+.contact-form .form-control {
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 10px 0;
+  color: #2D3B71;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.contact-form textarea.form-control {
+  height: 120px;
+}
+
+.contact-form .form-control:focus {
+  border-color: #F47B20;
+  box-shadow: none;
+}
+
+.contact-form .form-control::placeholder {
+  color: #999;
+}
+
+.contact-form .btn-submit {
+  background-color: #F47B20;
+  color: #fff;
+  padding: 12px 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.contact-form .btn-submit:hover {
+  background-color: #2D3B71;
+  transform: translateY(-5px);
+}
+
+/* Ensure text on dark backgrounds is white for accessibility */
+.dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg h5, .dark-bg h6,
+.dark-bg p, .dark-bg span, .dark-bg a:not(.btn), .dark-bg li,
+.footer-widgets h1, .footer-widgets h2, .footer-widgets h3, 
+.footer-widgets h4, .footer-widgets h5, .footer-widgets h6,
+.footer-widgets p, .footer-widgets span, .footer-widgets li,
+.page-header h1, .page-header h2, .page-header .breadcrumbs,
+.page-header p, .page-header span,
+.cta-section h1, .cta-section h2, .cta-section h3,
+.cta-section h4, .cta-section h5, .cta-section h6,
+.cta-section p, .cta-section span,
+.primary-bg h1, .primary-bg h2, .primary-bg h3,
+.primary-bg h4, .primary-bg h5, .primary-bg h6,
+.primary-bg p, .primary-bg span, .primary-bg li {
+  color: #ffffff !important;
+}
+
+/* Modern CTA section */
+.cta-section {
+  background-color: #2D3B71;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect x="0" y="0" width="50" height="50" fill="%23F47B20" fill-opacity="0.05"/></svg>');
+  opacity: 0.1;
+}
