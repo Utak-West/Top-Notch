@@ -1,6 +1,6 @@
-# Elementor Pro & Nexter Pro Template Guide
+# Elementor Pro & Nexter Pro Template Guide for New Jersey Home Renovations
 
-This guide provides specific instructions for implementing the Top Notch Renovations website using Nexter Pro templates and Elementor Pro, focusing on template selection, customization, and integration with premium plugins.
+This guide provides specific instructions for implementing the Top Notch Renovations website using Nexter Pro templates and Elementor Pro, focusing on template selection, customization, and integration with premium plugins. The implementation includes dedicated local SEO optimizations for New Jersey and surrounding areas to maximize visibility for Linden, NJ and nearby communities.
 
 ## Recommended Nexter Pro Templates
 
@@ -8,7 +8,8 @@ After reviewing the Nexter Pro template library, the following templates are mos
 
 1. **Nexter Construction** - Full construction company template with service showcases and project galleries
 2. **Nexter Renovation** - Home renovation focused template with before/after portfolio features
-3. **Nexter Interior** - Interior design template that can be adapted for renovation services
+3. **Nexter Interior** - Interior design template that can be adapted for New Jersey renovation services
+4. **Nexter Local Business** - Template with geo-targeting features ideal for New Jersey service areas
 
 ## Template Customization Workflow
 
@@ -36,11 +37,12 @@ After reviewing the Nexter Pro template library, the following templates are mos
    - Navigate to "Colors" section
 
 2. **Color Palette Setup**:
-   - Primary Color: `#2D3B71` (Dark Blue)
-   - Secondary Color: `#F47B20` (Orange)
+   - Primary Color: `#2D3B71` (Dark Blue) - Matches New Jersey brand identity
+   - Secondary Color: `#F47B20` (Orange) - High contrast for CTA elements
    - Accent Color: Set to matching neutral tone
    - Background Light: `#f8f8f8`
    - Background Dark: `#2D3B71`
+   - NJ Geo-Accent: `#336699` (Optional secondary accent for location-specific elements)
 
 3. **Typography Configuration**:
    - Navigate to "Typography" in Theme Options
@@ -215,12 +217,18 @@ After reviewing the Nexter Pro template library, the following templates are mos
    - Configure caching settings
    - Enable file optimization
    - Configure lazy loading
-   - Preload key pages
+   - Preload key New Jersey location pages
+   - Configure mobile optimization for local searchers
 
-2. **Yoast SEO**:
-   - Configure Yoast for each page
-   - Set up XML sitemap
-   - Configure social sharing metadata
+2. **All in One SEO Pack Pro**:
+   - Configure local SEO settings for New Jersey business
+   - Set up location-specific meta descriptions and titles
+   - Implement local business schema markup for Linden, NJ
+   - Configure XML sitemap with geo-targeting
+   - Set up Google Business Profile integration
+   - Optimize for local keywords (Linden, Union County, NJ, etc.)
+   - Configure local schema with New Jersey contractor licensing
+   - Set up location pages for service areas
 
 3. **Smush Pro**:
    - Bulk optimize all images

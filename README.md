@@ -1,6 +1,6 @@
-# Top Notch Renovations & Home Services
+# Top Notch Renovations & Home Services - New Jersey
 
-This repository contains all the necessary files for the Top Notch Renovations & Home Services website, including static website assets, WordPress theme files, deployment scripts, and comprehensive documentation. Our implementation approach uses Nexter Pro templates as a foundation with Elementor Pro customization, integrating Amelia booking and other premium plugins.
+This repository contains all the necessary files for the Top Notch Renovations & Home Services website, including static website assets, WordPress theme files, deployment scripts, and comprehensive documentation. Our implementation approach uses Nexter Pro templates as a foundation with Elementor Pro customization, integrating Amelia booking and All in One SEO Pack Pro for local New Jersey SEO optimization.
 
 ## Project Structure
 
