@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Option 6: Minimal icon with blue and orange split -->
+  <circle cx="256" cy="256" r="256" fill="#2D3B71"/>
+  <path d="M156 226 L256 146 L356 226 M176 226 L176 352 L336 352 L336 226" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M256 146 L256 352" stroke="#F47B20" stroke-width="20" stroke-linecap="round"/>
+</svg>

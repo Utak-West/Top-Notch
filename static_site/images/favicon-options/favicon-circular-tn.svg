@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Option 4: Circular TN with orange accent -->
+  <circle cx="256" cy="256" r="256" fill="#2D3B71"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="white" stroke-width="10"/>
+  <text x="256" y="290" font-family="Montserrat, sans-serif" font-weight="700" font-size="150" fill="white" text-anchor="middle">TN</text>
+  <!-- Orange accent line below text -->
+  <line x1="176" y1="320" x2="336" y2="320" stroke="#F47B20" stroke-width="16" stroke-linecap="round"/>
+</svg>

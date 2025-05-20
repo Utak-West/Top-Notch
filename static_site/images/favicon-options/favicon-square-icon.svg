@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Option 3: Square icon with home symbol and orange bar -->
+  <rect x="0" y="0" width="512" height="512" rx="64" ry="64" fill="#2D3B71"/>
+  <path d="M176 246 L256 176 L336 246 L320 246 L320 336 L192 336 L192 246 Z" fill="white" />
+  <rect x="230" y="280" width="52" height="56" fill="#F47B20" />
+  <rect x="136" y="376" width="240" height="24" fill="#F47B20" rx="12" ry="12" />
+</svg>
