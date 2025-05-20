@@ -1,0 +1,410 @@
+/**
+ * Top Notch Renovations & Home Services
+ * Color Scheme Adjustments for Wilmr Theme
+ */
+
+/* 
+ * This file contains specific color overrides to adapt the Wilmr theme
+ * to match Top Notch Renovations & Home Services brand colors
+ */
+
+/* Primary Brand Color Overrides */
+.mkdf-main-color,
+.mkdf-drop-down .second .inner ul li.current-menu-ancestor > a,
+.mkdf-drop-down .second .inner ul li.current-menu-item > a,
+.mkdf-drop-down .wide .second .inner > ul > li.current-menu-ancestor > a,
+.mkdf-drop-down .wide .second .inner > ul > li.current-menu-item > a,
+.mkdf-side-menu-button-opener.opened,
+.mkdf-side-menu-button-opener:hover,
+.mkdf-search-opener:hover,
+.mkdf-team-single-info .mkdf-icon-shortcode,
+.mkdf-team-single-info .mkdf-team-position,
+.mkdf-search-page-holder .mkdf-search-page-form .mkdf-form-holder .mkdf-search-submit:hover,
+.mkdf-testimonials-quotes,
+.mkdf-testimonials-job,
+.mkdf-testimonials-holder .owl-nav .owl-prev:hover .mkdf-prev-icon,
+.mkdf-testimonials-holder .owl-nav .owl-next:hover .mkdf-next-icon,
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-prices .mkdf-pt-value,
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-prices .mkdf-pt-price,
+.mkdf-social-share-holder.mkdf-dropdown .mkdf-social-share-dropdown-opener:hover,
+.mkdf-blog-holder article .mkdf-post-info-bottom .mkdf-post-info-bottom-left a:hover,
+.mkdf-blog-holder article.sticky .mkdf-post-title a,
+.mkdf-blog-pagination ul li a.mkdf-pag-active,
+.mkdf-blog-pagination ul li a:hover,
+.mkdf-bl-standard-pagination ul li a.mkdf-pag-active,
+.mkdf-bl-standard-pagination ul li a:hover,
+.mkdf-author-description .mkdf-author-description-text-holder .mkdf-author-name a:hover,
+.mkdf-author-description .mkdf-author-description-text-holder .mkdf-author-social-icons a:hover,
+.mkdf-blog-single-navigation .mkdf-blog-single-prev:hover,
+.mkdf-blog-single-navigation .mkdf-blog-single-next:hover,
+.mkdf-blog-list-holder .mkdf-bli-info a:hover,
+.mkdf-blog-list-holder.mkdf-bl-minimal .mkdf-post-info-date a:hover,
+.mkdf-blog-list-holder.mkdf-bl-simple .mkdf-bli-content .mkdf-post-info-date a:hover,
+.mkdf-main-menu ul li a:hover,
+.mkdf-main-menu > ul > li.mkdf-active-item > a,
+.mkdf-light-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-main-menu > ul > li.mkdf-active-item > a,
+.mkdf-light-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-main-menu > ul > li > a:hover,
+.mkdf-dark-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-main-menu > ul > li.mkdf-active-item > a,
+.mkdf-dark-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-main-menu > ul > li > a:hover,
+.mkdf-mobile-header .mkdf-mobile-menu-opener a:hover,
+.mkdf-mobile-header .mkdf-mobile-nav .mkdf-grid > ul > li.mkdf-active-item > a,
+.mkdf-mobile-header .mkdf-mobile-nav .mkdf-grid > ul > li > a:hover,
+.mkdf-mobile-header .mkdf-mobile-nav ul ul li.current-menu-ancestor > a,
+.mkdf-mobile-header .mkdf-mobile-nav ul ul li.current-menu-item > a,
+.mkdf-mobile-header .mkdf-mobile-nav ul ul li a:hover,
+.mkdf-btn.mkdf-btn-simple,
+.mkdf-btn.mkdf-btn-outline,
+.mkdf-counter-holder .mkdf-counter,
+.mkdf-icon-shortcode.mkdf-circle, .mkdf-icon-shortcode.mkdf-dropcaps.mkdf-circle, .mkdf-icon-shortcode.mkdf-square,
+.mkdf-icon-shortcode.mkdf-circle:hover, .mkdf-icon-shortcode.mkdf-dropcaps.mkdf-circle:hover, .mkdf-icon-shortcode.mkdf-square:hover,
+.mkdf-social-share-holder.mkdf-list li a:hover,
+.mkdf-social-share-holder.mkdf-dropdown .mkdf-social-share-dropdown-opener:hover,
+.mkdf-twitter-list-holder .mkdf-twitter-icon,
+.mkdf-twitter-list-holder .mkdf-tweet-text a:hover,
+.mkdf-twitter-list-holder .mkdf-twitter-profile a:hover,
+.widget.widget_mkdf_twitter_widget .mkdf-twitter-widget li .mkdf-twitter-icon,
+.widget.widget_mkdf_twitter_widget .mkdf-twitter-widget li .mkdf-tweet-text a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Secondary Brand Color Overrides */
+.mkdf-st-loader .pulse,
+.mkdf-st-loader .double_pulse .double-bounce1, .mkdf-st-loader .double_pulse .double-bounce2,
+.mkdf-st-loader .cube,
+.mkdf-st-loader .rotating_cubes .cube1, .mkdf-st-loader .rotating_cubes .cube2,
+.mkdf-st-loader .stripes > div,
+.mkdf-st-loader .wave > div,
+.mkdf-st-loader .two_rotating_circles .dot1, .mkdf-st-loader .two_rotating_circles .dot2,
+.mkdf-st-loader .five_rotating_circles .container1 > div, .mkdf-st-loader .five_rotating_circles .container2 > div, .mkdf-st-loader .five_rotating_circles .container3 > div,
+.mkdf-st-loader .atom .ball-1:before, .mkdf-st-loader .atom .ball-2:before, .mkdf-st-loader .atom .ball-3:before, .mkdf-st-loader .atom .ball-4:before,
+.mkdf-st-loader .clock .ball:before,
+.mkdf-st-loader .mitosis .ball,
+.mkdf-st-loader .lines .line1, .mkdf-st-loader .lines .line2, .mkdf-st-loader .lines .line3, .mkdf-st-loader .lines .line4,
+.mkdf-st-loader .fussion .ball, .mkdf-st-loader .fussion .ball-1, .mkdf-st-loader .fussion .ball-2, .mkdf-st-loader .fussion .ball-3, .mkdf-st-loader .fussion .ball-4,
+.mkdf-st-loader .wave_circles .ball,
+.mkdf-st-loader .pulse_circles .ball,
+.mkdf-comment-holder .mkdf-comment-text .comment-edit-link:hover,
+.mkdf-comment-holder .mkdf-comment-text .comment-reply-link:hover,
+.mkdf-comment-holder .mkdf-comment-text .replay:hover,
+.mkdf-comment-holder .mkdf-comment-text #cancel-comment-reply-link:hover,
+#submit_comment:hover,
+.post-password-form input[type=submit]:hover,
+input.wpcf7-form-control.wpcf7-submit:hover,
+.mkdf-owl-slider .owl-dots .owl-dot.active span,
+.mkdf-owl-slider .owl-dots .owl-dot:hover span,
+.mkdf-page-footer .mkdf-footer-top-holder,
+.mkdf-side-menu,
+.mkdf-progress-bar .mkdf-pb-content-holder .mkdf-pb-content,
+.mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li.ui-state-active a,
+.mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li.ui-state-hover a,
+.mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li.ui-state-active a,
+.mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li.ui-state-hover a,
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title.ui-state-active,
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title.ui-state-hover,
+.mkdf-blog-holder article .mkdf-post-info-bottom .mkdf-post-info-bottom-left .mkdf-post-info-comments:hover,
+.mkdf-blog-holder article .mkdf-post-info-bottom .mkdf-post-info-bottom-right .mkdf-blog-share:hover,
+.mkdf-blog-holder article.format-link .mkdf-post-text,
+.mkdf-blog-holder article.format-quote .mkdf-post-text,
+.mkdf-blog-holder article .mkdf-post-mark,
+.mkdf-blog-list-holder .mkdf-post-mark,
+.mkdf-btn.mkdf-btn-solid,
+.mkdf-dropcaps.mkdf-circle, .mkdf-dropcaps.mkdf-square,
+.mkdf-icon-shortcode.mkdf-circle, .mkdf-icon-shortcode.mkdf-dropcaps.mkdf-circle, .mkdf-icon-shortcode.mkdf-square,
+.mkdf-process-holder .mkdf-process-circle,
+.mkdf-process-holder .mkdf-process-line,
+.mkdf-progress-bar .mkdf-pb-content-holder .mkdf-pb-content,
+.mkdf-tabs .mkdf-tabs-nav li.ui-state-active a, .mkdf-tabs .mkdf-tabs-nav li.ui-state-hover a,
+.mkdf-team-holder.mkdf-team-info-below-image .mkdf-team-social-wrapper,
+.mkdf-team-holder.mkdf-team-info-on-hover .mkdf-team-social-wrapper,
+.mkdf-testimonials-holder.mkdf-testimonials-boxed .mkdf-testimonials-mark,
+.mkdf-testimonials-holder .owl-dots .owl-dot.active span,
+.mkdf-testimonials-holder .owl-dots .owl-dot:hover span,
+.mkdf-twitter-list-holder .mkdf-twitter-list.mkdf-tl-slider .owl-dots .owl-dot.active span,
+.mkdf-twitter-list-holder .mkdf-twitter-list.mkdf-tl-slider .owl-dots .owl-dot:hover span {
+    background-color: var(--secondary-color) !important;
+}
+
+/* Primary Color Border Overrides */
+.mkdf-st-loader .pulse_circles .ball,
+.mkdf-owl-slider .owl-dots .owl-dot.active span,
+.mkdf-owl-slider .owl-dots .owl-dot:hover span,
+.mkdf-btn.mkdf-btn-outline,
+.mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li.ui-state-active a,
+.mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li.ui-state-hover a,
+.mkdf-testimonials-holder .owl-dots .owl-dot.active span,
+.mkdf-testimonials-holder .owl-dots .owl-dot:hover span,
+.mkdf-twitter-list-holder .mkdf-twitter-list.mkdf-tl-slider .owl-dots .owl-dot.active span,
+.mkdf-twitter-list-holder .mkdf-twitter-list.mkdf-tl-slider .owl-dots .owl-dot:hover span {
+    border-color: var(--primary-color) !important;
+}
+
+/* Secondary Color Border Overrides */
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-title-holder {
+    border-color: var(--secondary-color) !important;
+}
+
+/* Button Color Overrides */
+.mkdf-btn.mkdf-btn-solid {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.mkdf-btn.mkdf-btn-solid:hover {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+.mkdf-btn.mkdf-btn-outline {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.mkdf-btn.mkdf-btn-outline:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+}
+
+/* Secondary Buttons */
+.mkdf-btn.mkdf-btn-secondary {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+    color: var(--white) !important;
+}
+
+.mkdf-btn.mkdf-btn-secondary:hover {
+    background-color: var(--secondary-light) !important;
+    border-color: var(--secondary-light) !important;
+}
+
+/* Call to Action Section */
+.mkdf-call-to-action-holder {
+    background-color: var(--primary-color) !important;
+}
+
+.mkdf-call-to-action-holder .mkdf-btn.mkdf-btn-solid {
+    background-color: var(--white) !important;
+    color: var(--primary-color) !important;
+    border-color: var(--white) !important;
+}
+
+.mkdf-call-to-action-holder .mkdf-btn.mkdf-btn-solid:hover {
+    background-color: var(--secondary-color) !important;
+    color: var(--white) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+/* Footer Colors */
+.mkdf-page-footer .mkdf-footer-top-holder {
+    background-color: var(--secondary-color) !important;
+}
+
+.mkdf-page-footer .mkdf-footer-bottom-holder {
+    background-color: var(--secondary-dark) !important;
+}
+
+/* Header Colors */
+.mkdf-page-header .mkdf-menu-area {
+    background-color: var(--white) !important;
+}
+
+.mkdf-page-header .mkdf-menu-area .mkdf-logo-wrapper a {
+    max-height: 60px !important;
+}
+
+.mkdf-main-menu > ul > li > a {
+    color: var(--secondary-color) !important;
+}
+
+.mkdf-main-menu > ul > li:hover > a,
+.mkdf-main-menu > ul > li.mkdf-active-item > a {
+    color: var(--primary-color) !important;
+}
+
+/* Mobile Menu Colors */
+.mkdf-mobile-header .mkdf-mobile-menu-opener a {
+    color: var(--secondary-color) !important;
+}
+
+.mkdf-mobile-header .mkdf-mobile-menu-opener a:hover {
+    color: var(--primary-color) !important;
+}
+
+.mkdf-mobile-header .mkdf-mobile-nav {
+    background-color: var(--white) !important;
+    border-top: 3px solid var(--primary-color) !important;
+}
+
+.mkdf-mobile-header .mkdf-mobile-nav ul li a {
+    color: var(--secondary-color) !important;
+}
+
+.mkdf-mobile-header .mkdf-mobile-nav ul li a:hover,
+.mkdf-mobile-header .mkdf-mobile-nav ul li.current-menu-item > a {
+    color: var(--primary-color) !important;
+}
+
+/* Service Box Colors */
+.mkdf-service-holder .mkdf-service-icon {
+    color: var(--primary-color) !important;
+}
+
+.mkdf-service-holder .mkdf-service-title {
+    color: var(--secondary-color) !important;
+}
+
+.mkdf-service-holder .mkdf-service-link {
+    color: var(--primary-color) !important;
+}
+
+.mkdf-service-holder .mkdf-service-link:hover {
+    color: var(--primary-dark) !important;
+}
+
+/* Testimonial Colors */
+.mkdf-testimonials-holder.mkdf-testimonials-boxed .mkdf-testimonials-mark {
+    background-color: var(--primary-color) !important;
+}
+
+.mkdf-testimonials-holder .mkdf-testimonial-author {
+    color: var(--secondary-color) !important;
+}
+
+.mkdf-testimonials-holder .mkdf-testimonial-title {
+    color: var(--primary-color) !important;
+}
+
+/* Team Member Colors */
+.mkdf-team-holder .mkdf-team-name {
+    color: var(--secondary-color) !important;
+}
+
+.mkdf-team-holder .mkdf-team-position {
+    color: var(--primary-color) !important;
+}
+
+.mkdf-team-holder .mkdf-team-social-holder .mkdf-team-icon:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Process Steps Colors */
+.mkdf-process-holder .mkdf-process-number-holder {
+    background-color: var(--primary-color) !important;
+}
+
+.mkdf-process-holder .mkdf-process-title {
+    color: var(--secondary-color) !important;
+}
+
+.mkdf-process-holder .mkdf-process-line {
+    background-color: var(--primary-color) !important;
+}
+
+/* Portfolio Colors */
+.mkdf-portfolio-list-holder .mkdf-pli-title {
+    color: var(--secondary-color) !important;
+}
+
+.mkdf-portfolio-list-holder .mkdf-pli-category-holder {
+    color: var(--primary-color) !important;
+}
+
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li.mkdf-pl-current,
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li:hover {
+    background-color: var(--primary-color) !important;
+}
+
+/* Blog Colors */
+.mkdf-blog-holder .mkdf-post-title {
+    color: var(--secondary-color) !important;
+}
+
+.mkdf-blog-holder .mkdf-post-info a {
+    color: var(--primary-color) !important;
+}
+
+.mkdf-blog-pagination ul li a.mkdf-pag-active,
+.mkdf-blog-pagination ul li a:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+}
+
+/* Contact Form Colors */
+.mkdf-contact-form-7 .wpcf7-submit {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+}
+
+.mkdf-contact-form-7 .wpcf7-submit:hover {
+    background-color: var(--primary-dark) !important;
+}
+
+/* Accordion Colors */
+.mkdf-accordion-holder .mkdf-accordion-title.ui-state-active {
+    background-color: var(--secondary-color) !important;
+    color: var(--white) !important;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-mark {
+    color: var(--primary-color) !important;
+}
+
+/* Counter Colors */
+.mkdf-counter-holder .mkdf-counter {
+    color: var(--primary-color) !important;
+}
+
+.mkdf-counter-holder .mkdf-counter-title {
+    color: var(--secondary-color) !important;
+}
+
+/* Pricing Table Colors */
+.mkdf-pricing-table.mkdf-pt-active .mkdf-pt-title-holder,
+.mkdf-pricing-table.mkdf-pt-active .mkdf-pt-prices {
+    background-color: var(--primary-color) !important;
+}
+
+.mkdf-pricing-table.mkdf-pt-active .mkdf-pt-prices {
+    background-color: var(--primary-dark) !important;
+}
+
+.mkdf-pricing-table .mkdf-pt-content ul li:before {
+    color: var(--primary-color) !important;
+}
+
+/* Back to Top Button */
+.mkdf-back-to-top {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.mkdf-back-to-top:hover {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+/* Social Icons */
+.mkdf-social-icon-widget-holder:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Slider/Banner Elements */
+.mkdf-slider .mkdf-btn.mkdf-btn-solid,
+.mkdf-banner-holder .mkdf-banner-link {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.mkdf-slider .mkdf-btn.mkdf-btn-solid:hover,
+.mkdf-banner-holder .mkdf-banner-link:hover {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+/* Before/After Comparison */
+.mkdf-comparison-slider-holder .mkdf-comparison-slider-handle {
+    background-color: var(--primary-color) !important;
+}
+
+.mkdf-comparison-slider-holder .mkdf-comparison-slider-label {
+    background-color: var(--primary-color) !important;
+}

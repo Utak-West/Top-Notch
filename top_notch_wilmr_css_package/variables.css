@@ -1,0 +1,82 @@
+/**
+ * Top Notch Renovations & Home Services
+ * CSS Variables Override for Wilmr Theme
+ */
+
+:root {
+  /* Brand Colors */
+  --primary-color: #FF7F24;
+  --primary-light: #FF9648;
+  --primary-dark: #E66A10;
+  --secondary-color: #1C2C5B;
+  --secondary-light: #2A407D;
+  --secondary-dark: #14213D;
+  
+  /* Neutral Colors */
+  --black: #333333;
+  --dark-gray: #555555;
+  --medium-gray: #888888;
+  --light-gray: #CCCCCC;
+  --lighter-gray: #E0E0E0;
+  --lightest-gray: #F5F5F5;
+  --white: #FFFFFF;
+  
+  /* Typography */
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 5rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-round: 50%;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Z-index layers */
+  --z-below: -1;
+  --z-normal: 1;
+  --z-above: 10;
+  --z-header: 100;
+  --z-modal: 1000;
+  
+  /* Container widths */
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  
+  /* Wilmr theme override variables */
+  --wilmr-primary: var(--secondary-color);
+  --wilmr-secondary: var(--primary-color);
+  --wilmr-heading-color: var(--secondary-color);
+  --wilmr-text-color: var(--black);
+  --wilmr-link-color: var(--primary-color);
+  --wilmr-link-hover-color: var(--primary-dark);
+  --wilmr-btn-primary-bg: var(--primary-color);
+  --wilmr-btn-primary-color: var(--white);
+  --wilmr-btn-secondary-bg: var(--secondary-color);
+  --wilmr-btn-secondary-color: var(--white);
+  --wilmr-header-bg: var(--white);
+  --wilmr-footer-bg: var(--secondary-color);
+  --wilmr-footer-text: var(--white);
+}
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');

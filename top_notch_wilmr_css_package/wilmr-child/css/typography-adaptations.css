@@ -1,0 +1,560 @@
+/**
+ * Top Notch Renovations & Home Services
+ * Typography Style Adaptations for Wilmr Theme
+ */
+
+/* 
+ * This file contains typography-specific overrides to adapt the Wilmr theme
+ * to match Top Notch Renovations & Home Services brand typography
+ */
+
+/* Base Typography */
+body {
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.mkdf-title-holder .mkdf-title-wrapper .mkdf-page-title,
+.mkdf-section-title-holder .mkdf-st-title,
+.mkdf-counter-holder .mkdf-counter-title,
+.mkdf-pricing-table .mkdf-pt-title,
+.mkdf-tabs .mkdf-tabs-nav li a,
+.mkdf-accordion-holder .mkdf-accordion-title,
+.mkdf-blog-holder article .mkdf-post-title,
+.mkdf-blog-list-holder .mkdf-bli-title,
+.mkdf-portfolio-list-holder .mkdf-pli-title,
+.mkdf-team-holder .mkdf-team-name,
+.mkdf-testimonials-holder .mkdf-testimonial-author,
+.mkdf-process-holder .mkdf-process-title,
+.mkdf-banner-holder .mkdf-banner-title,
+.mkdf-btn,
+.mkdf-call-to-action-holder .mkdf-call-to-action-text {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--secondary-color);
+  margin: 0 0 20px;
+}
+
+/* Heading Sizes */
+h1,
+.mkdf-title-holder .mkdf-title-wrapper .mkdf-page-title {
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+h2,
+.mkdf-section-title-holder .mkdf-st-title {
+  font-size: 2rem;
+  letter-spacing: -0.3px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  letter-spacing: -0.2px;
+}
+
+h4,
+.mkdf-team-holder .mkdf-team-name,
+.mkdf-process-holder .mkdf-process-title,
+.mkdf-banner-holder .mkdf-banner-title {
+  font-size: 1.5rem;
+  letter-spacing: -0.1px;
+}
+
+h5,
+.mkdf-counter-holder .mkdf-counter-title,
+.mkdf-pricing-table .mkdf-pt-title,
+.mkdf-testimonials-holder .mkdf-testimonial-author {
+  font-size: 1.25rem;
+  letter-spacing: 0;
+}
+
+h6,
+.mkdf-tabs .mkdf-tabs-nav li a,
+.mkdf-accordion-holder .mkdf-accordion-title {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Section Titles */
+.mkdf-section-title-holder {
+  margin-bottom: 40px;
+}
+
+.mkdf-section-title-holder .mkdf-st-title {
+  margin-bottom: 15px;
+}
+
+.mkdf-section-title-holder .mkdf-st-text {
+  font-family: var(--body-font);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--black);
+}
+
+/* Uppercase Transformations */
+.mkdf-section-title-holder .mkdf-st-title,
+.mkdf-tabs .mkdf-tabs-nav li a,
+.mkdf-btn,
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li span,
+.mkdf-process-holder .mkdf-process-title,
+.mkdf-pricing-table .mkdf-pt-title,
+.mkdf-counter-holder .mkdf-counter-title {
+  text-transform: uppercase;
+}
+
+/* Body Text */
+p,
+.mkdf-section-title-holder .mkdf-st-text,
+.mkdf-service-holder .mkdf-service-text,
+.mkdf-team-holder .mkdf-team-text,
+.mkdf-testimonials-holder .mkdf-testimonial-text,
+.mkdf-blog-holder article .mkdf-post-excerpt,
+.mkdf-blog-list-holder .mkdf-bli-excerpt,
+.mkdf-portfolio-list-holder .mkdf-pli-text-holder .mkdf-pli-excerpt,
+.mkdf-accordion-holder .mkdf-accordion-content,
+.mkdf-process-holder .mkdf-process-text,
+.mkdf-banner-holder .mkdf-banner-text {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--black);
+  margin: 0 0 20px;
+}
+
+/* Larger Body Text */
+.mkdf-section-title-holder .mkdf-st-text,
+.mkdf-call-to-action-holder .mkdf-call-to-action-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Smaller Body Text */
+.mkdf-blog-holder .mkdf-post-info,
+.mkdf-blog-list-holder .mkdf-bli-info,
+.mkdf-portfolio-list-holder .mkdf-pli-category-holder,
+.mkdf-team-holder .mkdf-team-position,
+.mkdf-testimonials-holder .mkdf-testimonial-title,
+.mkdf-pricing-table .mkdf-pt-mark,
+.mkdf-counter-holder .mkdf-counter-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Font Weights */
+.mkdf-main-menu > ul > li > a,
+.mkdf-drop-down .second .inner ul li a,
+.mkdf-mobile-nav ul li a,
+.mkdf-btn,
+.mkdf-team-holder .mkdf-team-position,
+.mkdf-testimonials-holder .mkdf-testimonial-author,
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li span,
+.mkdf-blog-holder .mkdf-post-info-author,
+.mkdf-counter-holder .mkdf-counter-title {
+  font-weight: 600;
+}
+
+.mkdf-section-title-holder .mkdf-st-title,
+.mkdf-counter-holder .mkdf-counter,
+.mkdf-pricing-table .mkdf-pt-price,
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Line Heights */
+.mkdf-main-menu > ul > li > a,
+.mkdf-drop-down .second .inner ul li a,
+.mkdf-mobile-nav ul li a,
+.mkdf-btn,
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li span {
+  line-height: 1.4;
+}
+
+.mkdf-section-title-holder .mkdf-st-title,
+.mkdf-counter-holder .mkdf-counter-title,
+.mkdf-pricing-table .mkdf-pt-title,
+.mkdf-team-holder .mkdf-team-name,
+.mkdf-testimonials-holder .mkdf-testimonial-author,
+.mkdf-process-holder .mkdf-process-title,
+.mkdf-banner-holder .mkdf-banner-title,
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+/* Letter Spacing */
+.mkdf-main-menu > ul > li > a,
+.mkdf-btn,
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li span,
+.mkdf-counter-holder .mkdf-counter-title,
+.mkdf-pricing-table .mkdf-pt-title {
+  letter-spacing: 0.5px;
+}
+
+/* Menu Typography */
+.mkdf-main-menu > ul > li > a {
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.mkdf-drop-down .second .inner ul li a {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+/* Mobile Menu Typography */
+.mkdf-mobile-nav ul li a {
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Button Typography */
+.mkdf-btn {
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Footer Typography */
+.mkdf-page-footer .widget .mkdf-widget-title {
+  font-family: var(--heading-font);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.mkdf-page-footer .textwidget p {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.mkdf-page-footer .widget_nav_menu ul li a {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.mkdf-page-footer .mkdf-footer-bottom-holder .textwidget p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Service Box Typography */
+.mkdf-service-holder .mkdf-service-title {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  margin-bottom: 15px;
+}
+
+.mkdf-service-holder .mkdf-service-text {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.mkdf-service-holder .mkdf-service-link {
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+/* Team Member Typography */
+.mkdf-team-holder .mkdf-team-name {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  margin-bottom: 5px;
+}
+
+.mkdf-team-holder .mkdf-team-position {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.mkdf-team-holder .mkdf-team-text {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Testimonial Typography */
+.mkdf-testimonials-holder .mkdf-testimonial-text {
+  font-family: var(--body-font);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.mkdf-testimonials-holder .mkdf-testimonial-author {
+  font-family: var(--heading-font);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.mkdf-testimonials-holder .mkdf-testimonial-title {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* Process Steps Typography */
+.mkdf-process-holder .mkdf-process-title {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.mkdf-process-holder .mkdf-process-text {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Counter Typography */
+.mkdf-counter-holder .mkdf-counter {
+  font-family: var(--heading-font);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.mkdf-counter-holder .mkdf-counter-title {
+  font-family: var(--heading-font);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.mkdf-counter-holder .mkdf-counter-text {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Pricing Table Typography */
+.mkdf-pricing-table .mkdf-pt-title {
+  font-family: var(--heading-font);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.mkdf-pricing-table .mkdf-pt-price {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.mkdf-pricing-table .mkdf-pt-mark {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.mkdf-pricing-table .mkdf-pt-content ul li {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Blog Typography */
+.mkdf-blog-holder article .mkdf-post-title {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  margin-bottom: 15px;
+}
+
+.mkdf-blog-holder article .mkdf-post-info {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.mkdf-blog-holder article .mkdf-post-excerpt {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mkdf-blog-holder.mkdf-blog-single article .mkdf-post-title {
+  font-size: 2rem;
+}
+
+/* Portfolio Typography */
+.mkdf-portfolio-list-holder .mkdf-pli-title {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  margin-bottom: 5px;
+}
+
+.mkdf-portfolio-list-holder .mkdf-pli-category-holder {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li span {
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Call to Action Typography */
+.mkdf-call-to-action-holder .mkdf-call-to-action-text {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  margin-bottom: 15px;
+}
+
+.mkdf-call-to-action-holder .mkdf-call-to-action-subtitle {
+  font-family: var(--body-font);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Accordion Typography */
+.mkdf-accordion-holder .mkdf-accordion-title {
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-content {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Tabs Typography */
+.mkdf-tabs .mkdf-tabs-nav li a {
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.mkdf-tabs .mkdf-tab-container {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Banner Typography */
+.mkdf-banner-holder .mkdf-banner-title {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  margin-bottom: 15px;
+}
+
+.mkdf-banner-holder .mkdf-banner-text {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Form Typography */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+select {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.wpcf7-form label {
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-bottom: 5px;
+}
+
+/* Blockquote Typography */
+blockquote {
+  font-family: var(--body-font);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+blockquote cite {
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--primary-color);
+}

@@ -1,0 +1,633 @@
+/**
+ * Top Notch Renovations & Home Services
+ * Component Overrides for Wilmr Theme
+ */
+
+/* 
+ * Section 1: Hero/Banner Sections
+ */
+.mkdf-slider,
+.mkdf-banner-holder,
+.mkdf-full-screen-sections {
+  margin-bottom: var(--space-xl);
+}
+
+/* Slider text overlay */
+.mkdf-slider .mkdf-slider-content-outer {
+  background-color: rgba(28, 44, 91, 0.7);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+}
+
+.mkdf-slider .mkdf-slider-content-outer h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.mkdf-slider .mkdf-slider-content-outer p {
+  color: var(--white);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-md);
+}
+
+/* Banner styling */
+.mkdf-banner-holder .mkdf-banner-text-holder {
+  background-color: rgba(28, 44, 91, 0.7);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+}
+
+.mkdf-banner-holder .mkdf-banner-title {
+  color: var(--white);
+}
+
+.mkdf-banner-holder .mkdf-banner-text {
+  color: var(--white);
+}
+
+.mkdf-banner-holder .mkdf-banner-link {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: var(--radius-md);
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all var(--transition-normal);
+}
+
+.mkdf-banner-holder .mkdf-banner-link:hover {
+  background-color: var(--primary-dark);
+}
+
+/* 
+ * Section 2: Service Cards/Boxes
+ */
+.mkdf-service-holder {
+  margin-bottom: var(--space-lg);
+  transition: all var(--transition-normal);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.mkdf-service-holder:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-md);
+}
+
+.mkdf-service-holder .mkdf-service-title {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin: var(--space-md) 0;
+}
+
+.mkdf-service-holder .mkdf-service-text {
+  color: var(--black);
+  margin-bottom: var(--space-md);
+}
+
+.mkdf-service-holder .mkdf-service-link {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.mkdf-service-holder .mkdf-service-link:hover {
+  color: var(--primary-dark);
+}
+
+.mkdf-service-holder .mkdf-service-icon {
+  color: var(--primary-color);
+}
+
+/* 
+ * Section 3: Portfolio/Projects
+ */
+.mkdf-portfolio-list-holder {
+  margin-bottom: var(--space-xl);
+}
+
+.mkdf-portfolio-list-holder .mkdf-pli-title {
+  color: var(--secondary-color);
+}
+
+.mkdf-portfolio-list-holder .mkdf-pli-category-holder {
+  color: var(--primary-color);
+}
+
+/* Portfolio filters */
+.mkdf-portfolio-filter-holder {
+  margin-bottom: var(--space-lg);
+}
+
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li {
+  padding: 8px 20px;
+  margin: 0 5px;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+}
+
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li span {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li.mkdf-pl-current,
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li:hover {
+  background-color: var(--primary-color);
+}
+
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li.mkdf-pl-current span,
+.mkdf-portfolio-filter-holder .mkdf-portfolio-filter-holder-inner ul li:hover span {
+  color: var(--white);
+}
+
+/* Portfolio hover effects */
+.mkdf-portfolio-list-holder.mkdf-pl-hover-overlay-background .mkdf-pli-text-holder {
+  background-color: rgba(255, 127, 36, 0.9);
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-hover-overlay-background .mkdf-pli-text-wrapper {
+  padding: var(--space-md);
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-hover-overlay-background .mkdf-pli-text-holder .mkdf-pli-title,
+.mkdf-portfolio-list-holder.mkdf-pl-hover-overlay-background .mkdf-pli-text-holder .mkdf-pli-category-holder {
+  color: var(--white);
+}
+
+/* Before/After comparison */
+.mkdf-comparison-slider-holder {
+  margin-bottom: var(--space-xl);
+}
+
+.mkdf-comparison-slider-holder .mkdf-comparison-slider-handle {
+  background-color: var(--primary-color);
+}
+
+.mkdf-comparison-slider-holder .mkdf-comparison-slider-handle:after,
+.mkdf-comparison-slider-holder .mkdf-comparison-slider-handle:before {
+  background-color: var(--white);
+}
+
+.mkdf-comparison-slider-holder .mkdf-comparison-slider-label {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+}
+
+/* 
+ * Section 4: Testimonials
+ */
+.mkdf-testimonials-holder {
+  margin-bottom: var(--space-xl);
+}
+
+.mkdf-testimonials-holder .mkdf-testimonial-text {
+  color: var(--black);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.mkdf-testimonials-holder .mkdf-testimonial-author {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.mkdf-testimonials-holder .mkdf-testimonial-title {
+  color: var(--primary-color);
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-boxed .mkdf-testimonial-content {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-lg);
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-boxed .mkdf-testimonial-content:before {
+  color: var(--primary-color);
+  opacity: 0.2;
+  font-size: 3rem;
+}
+
+/* 
+ * Section 5: Team Members
+ */
+.mkdf-team-holder {
+  margin-bottom: var(--space-lg);
+}
+
+.mkdf-team-holder .mkdf-team-name {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin: var(--space-md) 0 var(--space-xs);
+}
+
+.mkdf-team-holder .mkdf-team-position {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+.mkdf-team-holder .mkdf-team-text {
+  color: var(--black);
+  margin-bottom: var(--space-md);
+}
+
+.mkdf-team-holder .mkdf-team-social-holder {
+  margin-top: var(--space-sm);
+}
+
+.mkdf-team-holder .mkdf-team-social-holder .mkdf-team-icon {
+  color: var(--secondary-color);
+  margin: 0 5px;
+  transition: all var(--transition-normal);
+}
+
+.mkdf-team-holder .mkdf-team-social-holder .mkdf-team-icon:hover {
+  color: var(--primary-color);
+}
+
+.mkdf-team-holder.mkdf-team-info-below-image .mkdf-team-info {
+  padding: var(--space-md);
+  background-color: var(--white);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.mkdf-team-holder.mkdf-team-info-below-image .mkdf-team-image {
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  overflow: hidden;
+}
+
+/* 
+ * Section 6: Process Steps
+ */
+.mkdf-process-holder {
+  margin-bottom: var(--space-xl);
+}
+
+.mkdf-process-holder .mkdf-process-item {
+  margin-bottom: var(--space-lg);
+}
+
+.mkdf-process-holder .mkdf-process-number-holder {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: var(--radius-round);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.mkdf-process-holder .mkdf-process-title {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.mkdf-process-holder .mkdf-process-text {
+  color: var(--black);
+}
+
+.mkdf-process-holder .mkdf-process-line {
+  background-color: var(--primary-color);
+}
+
+/* 
+ * Section 7: Call to Action
+ */
+.mkdf-call-to-action-holder {
+  background-color: var(--primary-color);
+  padding: var(--space-xl) 0;
+  margin-bottom: var(--space-xl);
+}
+
+.mkdf-call-to-action-holder .mkdf-call-to-action-text {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.mkdf-call-to-action-holder .mkdf-call-to-action-subtitle {
+  color: var(--white);
+  opacity: 0.9;
+  margin-bottom: var(--space-lg);
+}
+
+.mkdf-call-to-action-holder .mkdf-btn.mkdf-btn-solid {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border-color: var(--white);
+}
+
+.mkdf-call-to-action-holder .mkdf-btn.mkdf-btn-solid:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-color: var(--secondary-color);
+}
+
+/* 
+ * Section 8: Contact Form
+ */
+.mkdf-contact-form-7 {
+  margin-bottom: var(--space-xl);
+}
+
+.mkdf-contact-form-7 input[type="text"],
+.mkdf-contact-form-7 input[type="email"],
+.mkdf-contact-form-7 input[type="tel"],
+.mkdf-contact-form-7 textarea {
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-sm);
+  padding: 12px 20px;
+  margin-bottom: var(--space-md);
+  width: 100%;
+  font-family: var(--body-font);
+  color: var(--black);
+  transition: all var(--transition-normal);
+}
+
+.mkdf-contact-form-7 input[type="text"]:focus,
+.mkdf-contact-form-7 input[type="email"]:focus,
+.mkdf-contact-form-7 input[type="tel"]:focus,
+.mkdf-contact-form-7 textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 127, 36, 0.1);
+}
+
+.mkdf-contact-form-7 textarea {
+  height: 150px;
+}
+
+.mkdf-contact-form-7 .wpcf7-submit {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 12px 30px;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.mkdf-contact-form-7 .wpcf7-submit:hover {
+  background-color: var(--primary-dark);
+}
+
+.mkdf-contact-form-7 .wpcf7-not-valid-tip {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: -15px;
+  margin-bottom: var(--space-sm);
+}
+
+.mkdf-contact-form-7 .wpcf7-response-output {
+  margin: var(--space-md) 0;
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+.mkdf-contact-form-7 .wpcf7-validation-errors {
+  background-color: #ffeaa7;
+  border: 1px solid #fdcb6e;
+  color: #d35400;
+}
+
+.mkdf-contact-form-7 .wpcf7-mail-sent-ok {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+/* 
+ * Section 9: FAQ Accordion
+ */
+.mkdf-accordion-holder {
+  margin-bottom: var(--space-xl);
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title {
+  background-color: var(--lightest-gray);
+  color: var(--secondary-color);
+  font-weight: 600;
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  margin-bottom: 5px;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title:hover {
+  background-color: var(--lighter-gray);
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title.ui-state-active {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  margin-bottom: 0;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-content {
+  background-color: var(--white);
+  border: 1px solid var(--lighter-gray);
+  border-top: none;
+  padding: var(--space-md);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.mkdf-accordion-holder .mkdf-accordion-mark {
+  color: var(--primary-color);
+}
+
+/* 
+ * Section 10: Counters/Stats
+ */
+.mkdf-counter-holder {
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.mkdf-counter-holder .mkdf-counter {
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.mkdf-counter-holder .mkdf-counter-title {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-bottom: var(--space-xs);
+}
+
+.mkdf-counter-holder .mkdf-counter-text {
+  color: var(--black);
+  font-size: 0.9rem;
+}
+
+/* 
+ * Section 11: Pricing Tables
+ */
+.mkdf-pricing-table {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+  transition: all var(--transition-normal);
+}
+
+.mkdf-pricing-table:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mkdf-pricing-table .mkdf-pt-inner {
+  padding: 0;
+}
+
+.mkdf-pricing-table .mkdf-pt-title-holder {
+  background-color: var(--secondary-color);
+  padding: var(--space-md);
+}
+
+.mkdf-pricing-table .mkdf-pt-title {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.mkdf-pricing-table .mkdf-pt-prices {
+  background-color: var(--secondary-light);
+  padding: var(--space-md);
+  color: var(--white);
+}
+
+.mkdf-pricing-table .mkdf-pt-price {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.mkdf-pricing-table .mkdf-pt-mark {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.mkdf-pricing-table .mkdf-pt-content {
+  padding: var(--space-md);
+}
+
+.mkdf-pricing-table .mkdf-pt-content ul li {
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--lighter-gray);
+}
+
+.mkdf-pricing-table .mkdf-pt-content ul li:before {
+  content: "✓";
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
+.mkdf-pricing-table .mkdf-pt-button {
+  padding: 0 var(--space-md) var(--space-md);
+}
+
+.mkdf-pricing-table.mkdf-pt-active {
+  transform: scale(1.05);
+}
+
+.mkdf-pricing-table.mkdf-pt-active .mkdf-pt-title-holder,
+.mkdf-pricing-table.mkdf-pt-active .mkdf-pt-prices {
+  background-color: var(--primary-color);
+}
+
+.mkdf-pricing-table.mkdf-pt-active .mkdf-pt-prices {
+  background-color: var(--primary-dark);
+}
+
+/* 
+ * Section 12: Blog/News
+ */
+.mkdf-blog-holder {
+  margin-bottom: var(--space-xl);
+}
+
+.mkdf-blog-holder article {
+  margin-bottom: var(--space-lg);
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.mkdf-blog-holder article:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-md);
+}
+
+.mkdf-blog-holder .mkdf-post-title {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin: var(--space-md) 0 var(--space-sm);
+}
+
+.mkdf-blog-holder .mkdf-post-info {
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+}
+
+.mkdf-blog-holder .mkdf-post-info a {
+  color: var(--primary-color);
+}
+
+.mkdf-blog-holder .mkdf-post-excerpt {
+  margin-bottom: var(--space-md);
+}
+
+.mkdf-blog-holder .mkdf-post-read-more-button {
+  margin-bottom: var(--space-md);
+}
+
+.mkdf-blog-holder.mkdf-blog-single article {
+  box-shadow: none;
+  transform: none;
+}
+
+.mkdf-blog-holder.mkdf-blog-single .mkdf-post-title {
+  font-size: 2rem;
+}
+
+/* Blog pagination */
+.mkdf-blog-pagination {
+  margin-top: var(--space-xl);
+}
+
+.mkdf-blog-pagination ul li a {
+  background-color: var(--white);
+  color: var(--secondary-color);
+  border-radius: var(--radius-sm);
+  padding: 8px 15px;
+  font-weight: 600;
+  transition: all var(--transition-normal);
+}
+
+.mkdf-blog-pagination ul li a:hover,
+.mkdf-blog-pagination ul li.mkdf-pag-active a {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
