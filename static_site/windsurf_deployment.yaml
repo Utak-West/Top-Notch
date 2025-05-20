@@ -1,6 +1,19 @@
 # Windsurf Deploys Configuration (Beta)
-# This is an auto-generated file used to store your app deployment configuration. Do not modify.
-# The ID of the project (different from project name) on the provider's system. This is populated as a way to update existing deployments.
+# This is an auto-generated file used to store your app deployment configuration.
+# The ID of the project (different from project name) on the provider's system.
 project_id: 483e0206-7030-4ba7-adbf-414f6d727b3e
-# The framework of the web application (examples: nextjs, react, vue, etc.)
-framework: jekyll
+# The framework of the web application
+framework: wordpress
+# WordPress specific configuration
+wordpress:
+  version: "6.4"
+  plugins:
+    - name: "elementor"
+      version: "latest"
+    - name: "elementor-pro"
+      version: "latest"
+    - name: "wp-rocket"
+      version: "latest"
+    - name: "ameliabooking"
+      version: "latest"
+  theme: "topnotchnewjersey-child"

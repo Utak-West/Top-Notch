@@ -1,3 +1,6 @@
+# Top Notch Home Improvement - .htaccess Configuration
+# Optimized for multi-platform deployment (Vercel, Windsurf, Netlify)
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -9,34 +12,108 @@ RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
 
-# BEGIN GoDaddy Performance Optimizations
+# BEGIN Security Headers
+<IfModule mod_headers.c>
+  # Protect against XSS attacks
+  Header set X-XSS-Protection "1; mode=block"
 
-# Enable GZIP compression
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/x-javascript
+  # Prevent MIME-sniffing
+  Header set X-Content-Type-Options "nosniff"
+
+  # Prevent clickjacking
+  Header set X-Frame-Options "SAMEORIGIN"
+
+  # HSTS (HTTP Strict Transport Security)
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+
+  # Referrer policy
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Content Security Policy
+  Header set Content-Security-Policy "upgrade-insecure-requests;"
 </IfModule>
+# END Security Headers
 
-# Browser caching
+# BEGIN Browser Caching
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresByType image/jpg "access plus 1 year"
+
+  # Images
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/gif "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # CSS, JavaScript
   ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
+
+  # Fonts
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+
+  # Other
   ExpiresByType application/pdf "access plus 1 month"
-  ExpiresByType application/x-shockwave-flash "access plus 1 month"
   ExpiresDefault "access plus 2 days"
 </IfModule>
+# END Browser Caching
 
-# Set security headers
-<IfModule mod_headers.c>
-  Header set X-Content-Type-Options "nosniff"
-  Header set X-XSS-Protection "1; mode=block"
-  Header set X-Frame-Options "SAMEORIGIN"
-  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+# BEGIN GZIP Compression
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
 </IfModule>
-# END GoDaddy Performance Optimizations
+# END GZIP Compression
+
+# BEGIN Protect WordPress Files
+<FilesMatch "^(wp-config\.php|\.htaccess|readme\.html|license\.txt)">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+# END Protect WordPress Files
+
+# BEGIN Disable Directory Browsing
+Options -Indexes
+# END Disable Directory Browsing
+
+# BEGIN Block WordPress XMLRPC Requests
+<Files xmlrpc.php>
+  Order Deny,Allow
+  Deny from all
+</Files>
+# END Block WordPress XMLRPC Requests
+
+# BEGIN Elementor Specific Rules
+# Allow direct access to Elementor CSS files
+<FilesMatch "elementor-icons|elementor-pro|elementor\.css|elementor-common\.css">
+  Allow from all
+</FilesMatch>
+# END Elementor Specific Rules

@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "static_site/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/static_site/$1"
+    }
+  ],
+  "env": {
+    "WORDPRESS_API_URL": "https://topnotchrenovations.com/wp-json"
+  },
+  "github": {
+    "silent": true
+  }
+}

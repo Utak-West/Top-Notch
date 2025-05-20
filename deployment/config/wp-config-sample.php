@@ -89,6 +89,53 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+/**
+ * Multi-platform deployment settings for Top Notch Home Improvement
+ */
+// Detect if running on Vercel
+if (getenv('VERCEL') === '1') {
+    define('WP_HOME', getenv('VERCEL_URL') ? 'https://' . getenv('VERCEL_URL') : 'https://topnotchrenovations.com');
+    define('WP_SITEURL', getenv('VERCEL_URL') ? 'https://' . getenv('VERCEL_URL') : 'https://topnotchrenovations.com');
+}
+// Detect if running on Netlify
+elseif (getenv('NETLIFY') === 'true') {
+    define('WP_HOME', getenv('URL') ? getenv('URL') : 'https://topnotchrenovations.com');
+    define('WP_SITEURL', getenv('URL') ? getenv('URL') : 'https://topnotchrenovations.com');
+}
+// Default settings
+else {
+    define('WP_HOME', 'https://topnotchrenovations.com');
+    define('WP_SITEURL', 'https://topnotchrenovations.com');
+}
+
+/**
+ * Elementor settings
+ */
+define('ELEMENTOR_PRO_URL', 'https://topnotchrenovations.com/wp-content/plugins/elementor-pro/');
+
+/**
+ * Performance optimizations
+ */
+// Disable post revisions to reduce database size
+define('WP_POST_REVISIONS', 3);
+
+// Increase memory limit
+define('WP_MEMORY_LIMIT', '256M');
+
+// Disable automatic updates
+define('AUTOMATIC_UPDATER_DISABLED', true);
+
+// Disable file editing in the admin
+define('DISALLOW_FILE_EDIT', true);
+
+/**
+ * Security enhancements
+ */
+// Force SSL for admin
+define('FORCE_SSL_ADMIN', true);
+
+// Disable XML-RPC (if not needed)
+define('XMLRPC_ENABLED', false);
 
 
 /* That's all, stop editing! Happy publishing. */
